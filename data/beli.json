@@ -1,0 +1,204 @@
+{
+ "_catatan": "Link pembelian per sepatu, dikunci pakai nama tab Form Bedah. Kolom: website (situs resmi brand), tokopedia, shopee, blibli. Link berisi '/product?q=' atau '/search?q=' = halaman pencarian di dalam toko resmi (dipakai kalau halaman produk spesifiknya belum ketemu). Kolom 'cari' = daftar kolom lain yang isinya halaman koleksi/pencarian, bukan halaman produk.",
+ "MILLS ENERCHARGE M2": {
+  "tokopedia": "https://www.tokopedia.com/mills-official-978/mills-sepatu-lari-running-shoes-enercharge-m2-white-java-cyan-fresh-orange-9106601-1735012359674103585-1735012359685048097"
+ },
+ "MILLS Enercharge M 1": {
+  "tokopedia": "https://www.tokopedia.com/mills-official-978/mills-sepatu-lari-running-shoes-enercharge-m1-black-yellow-magenta-9105307-1733317165924779809"
+ },
+ "Unerd Montrex": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/unerd-montrex-sepatu-trail-running-pria-wanita-1737142758476121446-1737142758440404326"
+ },
+ "UNERD Motion 0.1": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/unerd-x-makna-motion-0-1-1737212635790083430-1737212666415187302"
+ },
+ "Mills Hypercharge": {
+  "tokopedia": "https://www.tokopedia.com/mills-official-978/mills-sepatu-lari-running-hypercharge-r26-white-java-cyan-fresh-orange-9105901-1735559564645599009-1735559536556672801"
+ },
+ "Unerd Beat Axis": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/unerd-performance-beat-axis-sepatu-running-pria-wanita-1734335194387875174"
+ },
+ "Unerd Sienna": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/unerd-sienna-sepatu-wanita-linen-1735776235617879398-1735776279188505958"
+ },
+ "Unerd Insurgent": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/unerd-insurgent-sepatu-sneakers-pria-wanita-1732148195242378598"
+ },
+ "Unerd Dochi": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/unerd-x-dochi-reso-d1-sepatu-sneakers-pria-wanita-noir-1735597278519985510-1735597403202356582"
+ },
+ "ORTUS_HYPERSONIC PIKACHU": {
+  "tokopedia": "https://www.tokopedia.com/ortuseightofficial/ortuseight-sepatu-running-hypersonic-pikachu-thunderbolt-1738334889752102662-1738334934298298118"
+ },
+ "Ortus Hyper Blast 3.0": {
+  "tokopedia": "https://www.tokopedia.com/ortuseightofficial/ortuseight-sepatu-running-hyperblast-3-0-white-magenta-1734944959813289734-1734945171397838598"
+ },
+ "Ortus Hyperblast 2": {
+  "tokopedia": "https://www.tokopedia.com/ortuseightofficial/ortuseight-sepatu-running-hyperblast-2-0-cloud-blue-ortrange-1729761086723950342"
+ },
+ "Ardiles RunnerGIze": {
+  "tokopedia": "https://www.tokopedia.com/ardiles/product?q=runergize"
+ },
+ "ARDILES_EVOLVE 2.0": {
+  "tokopedia": "https://www.tokopedia.com/ardiles/product?q=evolve"
+ },
+ "Ortus Solar 2.0": {
+  "tokopedia": "https://www.tokopedia.com/ortuseightofficial/product?q=solar"
+ },
+ "ORTUS_JOGOSALA MEWTWO": {
+  "tokopedia": "https://www.tokopedia.com/ortuseightofficial/product?q=mewtwo"
+ },
+ "Mills Dynaplate": {
+  "tokopedia": "https://www.tokopedia.com/mills-official-978/product?q=dynaplate"
+ },
+ "Unerd Pippa Mary Jane": {
+  "tokopedia": "https://www.tokopedia.com/unerdfootwear/product?q=pippa"
+ },
+ "Geoff MX Faster V1": {
+  "tokopedia": "https://www.tokopedia.com/gmxofficial/product?q=mx%20faster"
+ },
+ "Geoff MX Faster V2": {
+  "tokopedia": "https://www.tokopedia.com/gmxofficial/product?q=mx%20faster"
+ },
+ "WEIDENMANN HINTERHALT 01": {
+  "tokopedia": "https://www.tokopedia.com/wdmofficial/weidenmann-weidenmann-urban-hinterhalt-01-sepatu-outdoor-sneakers-1731133075502499098"
+ },
+ "WEIDENMANN HINTERHALT 02": {
+  "tokopedia": "https://www.tokopedia.com/wdmofficial/weidenmann-weidenmann-urban-hinterhalt-02-sepatu-outdoor-sneakers-1734400853270693146"
+ },
+ "WEIDENMANN HINTERHALT 03": {
+  "tokopedia": "https://www.tokopedia.com/wdmofficial/product?q=hinterhalt%2003"
+ },
+ "Weidenmann Recovery Sandal": {
+  "tokopedia": "https://www.tokopedia.com/wdmofficial/product?q=strata"
+ },
+ "Brodo Ace Neptune Hybrid Loafer": {
+  "tokopedia": "https://www.tokopedia.com/brodo/brodo-sneakers-ace-neptune-loafers-grey-ows-1734519814470731037"
+ },
+ "Brodo Loafers Hybrid": {
+  "tokopedia": "https://www.tokopedia.com/brodo/product?q=loafers"
+ },
+ "Patrobas Nomad": {
+  "tokopedia": "https://www.tokopedia.com/patrobas/patrobas-nomad-grey-white-sneakers-1734632749266667310-1734632801036502830"
+ },
+ "Patrobas Scholars": {
+  "tokopedia": "https://www.tokopedia.com/patrobas/patrobas-scholar-all-black-sneakers-1736107207487686446-1736107221489518382"
+ },
+ "Spendco Alfafit": {
+  "tokopedia": "https://www.tokopedia.com/altafit-indonesia/product?q=altafit"
+ },
+ "Ardiles AD2": {
+  "tokopedia": "https://www.tokopedia.com/ardiles/product?q=ad2"
+ },
+ "Ardiles Atf Jasper": {
+  "tokopedia": "https://www.tokopedia.com/ardiles/product?q=jasper"
+ },
+ "Ardiles Coventry Quantum Era": {
+  "tokopedia": "https://www.tokopedia.com/ardiles/product?q=coventry"
+ },
+ "Portee Alpaca": {
+  "tokopedia": "https://www.tokopedia.com/porteegoods/sandal-wanita-portee-goods-alpaca-onyx-sandal-women-sandal-outdoor-sandal-gunung-sandal-traveling-1732005221532403491"
+ },
+ "Adidas Hyperboost Run": {
+  "website": "https://www.adidas.co.id/id/sepatu-lari-hyperboost-run/KH8132.html"
+ },
+ "ADIDAS EVO SL WOVEN": {
+  "website": "https://www.adidas.co.id/en/adizero-evo-sl-woven-shoes/JR2024.html"
+ },
+ "EVO SL Baru": {
+  "website": "https://www.adidas.co.id/en/adizero-evo-sl-shoes/KI9542.html"
+ },
+ "Nike Vomero 18": {
+  "website": "https://www.nike.com/id/t/vomero-18-mens-road-running-shoes-snsbkH"
+ },
+ "Adizero Adios Pro Evo 2": {
+  "website": "https://www.adidas.co.id/en/shoes-regular-adizero-lightstrikepro",
+  "cari": [
+   "website"
+  ]
+ },
+ "Asics Trabuco 14": {
+  "website": "https://asics.co.id/running/trail-shoes/gel-trabuco-14"
+ },
+ "Nike Zegama": {
+  "website": "https://www.nike.com/id/t/acg-zegama-trail-mens-trail-running-shoes-45IgRhjL/HV8113-300"
+ },
+ "ASICS NovaBlast 4": {
+  "website": "https://asics.co.id/novablast-4.html"
+ },
+ "ASICS NovaBlast 5": {
+  "website": "https://asics.co.id/running/bounce-shoes/novablast-5"
+ },
+ "ASICS NovaBlast 6": {
+  "website": "https://asics.co.id/running/bounce-shoes/novablast-6"
+ },
+ "Deviate Nitro 4": {
+  "website": "https://id.puma.com/en/sport/running/deviate-nitro%E2%84%A2",
+  "cari": [
+   "website"
+  ]
+ },
+ "On Cloudsurfer": {
+  "website": "https://www.on.com/en-id/products/cloudsurfer-3md1042/mens"
+ },
+ "Puma Deviate Pure": {
+  "website": "https://id.puma.com/en/pd/deviate-pure-nitro%E2%84%A2-running-shoes-men/313904.html"
+ },
+ "Akross Traxion Moa": {
+  "tokopedia": "https://www.tokopedia.com/akrossworld/product?q=traxion"
+ },
+ "910 MARS JEZERO": {
+  "tokopedia": "https://www.tokopedia.com/910ninetenshoes/910-nineten-yuza-mars-jezero-sepatu-trail-kuning-running-outdoor-running-1735428466091066583-1735428489065759959"
+ },
+ "910 Yuza Manglayang": {
+  "tokopedia": "https://www.tokopedia.com/910ninetenshoes/product?q=manglayang"
+ },
+ "910 AURORUN STRIDE": {
+  "tokopedia": "https://www.tokopedia.com/910ninetenshoes/product?q=aurorun%20stride"
+ },
+ "JIM JOKER_GAEL 1CA": {
+  "website": "https://jimjoker.co.id/products/jim-joker-gael-1ca-sepatu-kasual"
+ },
+ "JIM JOKER_MOXY 1BA": {
+  "website": "https://jimjoker.co.id/search?q=moxy",
+  "cari": [
+   "website"
+  ]
+ },
+ "Gahalu Wakatobi": {
+  "tokopedia": "https://www.tokopedia.com/gahalu/gahalu-wakatobi-warna-bajo-white-sandal-1730402484023297962"
+ },
+ "Koku Kratos": {
+  "tokopedia": "https://www.tokopedia.com/kokufootwear/product?q=kratos"
+ },
+ "Footstep Arthur": {
+  "tokopedia": "https://www.tokopedia.com/footstepfootwear/product?q=arthur"
+ },
+ "Andre Antony": {
+  "website": "https://andreanthony.co.id/search?q=dotkoma",
+  "cari": [
+   "website"
+  ]
+ },
+ "Ballerbro X-Beast": {
+  "tokopedia": "https://www.tokopedia.com/ballerbro/product?q=x-beast"
+ },
+ "Fortuna Loafers Hybrid": {
+  "tokopedia": "https://www.tokopedia.com/fortuna-shoes-indonesia/product?q=hybrid"
+ },
+ "KING'S_KWD205CX-I": {
+  "tokopedia": "https://www.tokopedia.com/honeywellsafetyid/product?q=kwd205cx"
+ },
+ "Outdoor Pro Gen Z NXT": {
+  "tokopedia": "https://www.tokopedia.com/outdoorpro-id/product?q=gen%20z%20nxt"
+ },
+ "Outdoor ADV Coleseum Max JX": {
+  "tokopedia": "https://www.tokopedia.com/outdoorpro-id/product?q=coloseum%20max"
+ },
+ "Outdoor ADV Coleseum Max TX": {
+  "tokopedia": "https://www.tokopedia.com/outdoorpro-id/product?q=coloseum%20max"
+ },
+ "CHEETAH_VULCAN 5288": {
+  "tokopedia": "https://www.tokopedia.com/cheetah-safety-official/product?q=5288"
+ }
+}

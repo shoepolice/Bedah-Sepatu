@@ -21,6 +21,9 @@ const SP = {
     // link video panjang dari data/video.json (dipakai kalau "Link video" di Form Bedah kosong)
     try { const v = await (await fetch('data/video.json', { cache: 'no-cache' })).json();
       (this.data.sepatu || []).forEach(s => { if (!s.video && v[s.tab]) s.video = v[s.tab]; }); } catch (e) {}
+    // link pembelian toko resmi dari data/beli.json
+    try { const b = await (await fetch('data/beli.json', { cache: 'no-cache' })).json();
+      (this.data.sepatu || []).forEach(s => { if (!s.beli && b[s.tab]) s.beli = b[s.tab]; }); } catch (e) {}
     (this.data.sepatu || []).forEach((s, i) => { s._urut = s._urut ?? i; s.tag = s.tag || []; });
     // buang sepatu di daftar banding yang sudah tidak ada di database (misal id berubah setelah data diperbarui)
     const ada = new Set((this.data.sepatu || []).map(s => s.id));

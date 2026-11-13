@@ -6,12 +6,12 @@
 <title>Hasil Bedah — Shoe Police</title>
 <link rel="icon" href="assets/logo/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=28">
+<link rel="stylesheet" href="assets/style.css?v=29">
 </head>
 <body data-hal="database">
 <main class="wrap" id="isi"><p class="kosong-info">Memuat…</p></main>
 
-<script src="assets/app.js?v=28"></script>
+<script src="assets/app.js?v=29"></script>
 <script>
 (async () => {
   const id = new URLSearchParams(location.search).get('id');
@@ -52,6 +52,11 @@
   const mirip = grup.filter(x => x.id !== s.id).sort((x, y) => Math.abs((x.skor ?? 0) - (s.skor ?? 0)) - Math.abs((y.skor ?? 0) - (s.skor ?? 0))).slice(0, 4)
     .map(x => `<a class="mini" href="sepatu.html?id=${encodeURIComponent(x.id)}">${SP.ring(x.skor, 48)}<div><b>${e(x.brand)} ${e(x.model)}</b><span>${e(x.subtipe || x.kategori)}</span></div></a>`).join('');
   const yt = SP.ytId(s.video);
+  const TOKO = [['website', 'Website resmi'], ['tokopedia', 'Tokopedia'], ['shopee', 'Shopee'], ['blibli', 'Blibli']];
+  const beli = TOKO.filter(([k]) => /^https:\/\//.test(s.beli?.[k] || '')).map(([k, n]) => {
+    const cari = /\/product\?q=|\/search\?/.test(s.beli[k]) || (s.beli.cari || []).includes(k);
+    return `<a class="beli-${k}" href="${e(s.beli[k])}" target="_blank" rel="noopener nofollow">${n}<small>${cari ? 'Cari di toko resmi' : 'Toko resmi'}</small></a>`;
+  }).join('');
 
   const bagian = [
     ['ringkasan', 'Ringkasan', plus.length || minus.length],
@@ -78,6 +83,7 @@
         <button class="tombol gelap" id="tbanding">+ Bandingkan</button>
         ${yt ? `<a class="tombol garis" href="#video">▶ Tonton bedahnya</a>` : ''}
       </div>
+      ${beli ? `<div class="beli"><h4>Beli di toko resmi</h4><div class="beli-list">${beli}</div><p>Harga & stok mengikuti toko masing-masing.</p></div>` : ''}
     </div>
   </section>
 

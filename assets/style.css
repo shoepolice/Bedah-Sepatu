@@ -871,3 +871,16 @@ html.anim .muncul .tick i,html.anim .tick.muncul i{transform:none}
 .nav{z-index:50!important}
 .saran{z-index:60}
 .m-sos{gap:8px 14px!important;flex-wrap:wrap}.m-sos a{font-size:.85rem}
+
+/* ===== LINK PEMBELIAN ===== */
+.beli{margin-top:20px;padding-top:18px;border-top:1px solid rgba(41,41,41,.12)}
+.beli h4{font-family:'Futura-XBlkCn',sans-serif;text-transform:uppercase;letter-spacing:.02em;font-size:15px;margin:0 0 10px}
+.beli-list{display:flex;flex-wrap:wrap;gap:8px}
+.beli-list a{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 16px;border-radius:999px;background:#fff;border:1.5px solid #292929;color:#292929;text-decoration:none;font-weight:700;font-size:14px;line-height:1.1;transition:background .2s,transform .2s}
+.beli-list a small{font-weight:500;font-size:11px;opacity:.65}
+.beli-list a:hover{background:#ffc131;transform:translateY(-2px)}
+.beli-list a.beli-tokopedia{border-color:#03ac0e}
+.beli-list a.beli-shopee{border-color:#ee4d2d}
+.beli-list a.beli-blibli{border-color:#0095da}
+.beli p{font-size:12px;opacity:.6;margin:10px 0 0}
+@media (max-width:520px){.beli-list a{flex:1 1 calc(50% - 8px)}}
