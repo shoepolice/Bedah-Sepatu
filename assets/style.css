@@ -867,3 +867,6 @@ html.anim .muncul .tick i,html.anim .tick.muncul i{transform:none}
 
 .tanda-kurang{display:inline-block;font-size:.7rem;font-weight:700;background:#f3f3f3;color:var(--redup);padding:3px 9px;border-radius:99px;margin-bottom:6px}
 .info-kurang{font-size:.82rem;background:#FFF6DD;border-left:3px solid var(--kuning);padding:10px 12px;border-radius:0 10px 10px 0;margin-bottom:14px;color:#5a4a1a}
+/* perbaikan: header & saran pencarian selalu di atas konten */
+.nav{z-index:50!important}
+.saran{z-index:60}
