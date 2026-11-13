@@ -379,7 +379,7 @@ SP.terapkan = function (f) {
   const $ = id => document.getElementById(id);
   Promise.all([SP.muatConfig(), SP.muatData()]).then(([c, { sepatu = [] }]) => {
     const k = c.kontak || {};
-    $('ft-sos').innerHTML = [['Instagram', k.instagram], ['SPW', k.instagramSPW], ['YouTube', k.youtube], ['TikTok', k.tiktok]]
+    $('ft-sos').innerHTML = [['YouTube', k.youtube], ['TikTok', k.tiktok], ['Instagram', k.instagram], ['Femme Police', k.instagramSPW], ['NSP Project', k.instagramNSP]]
       .filter(x => x[1]).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t} ↗</a>`).join('');
     $('m-sos').innerHTML = $('ft-sos').innerHTML;
 

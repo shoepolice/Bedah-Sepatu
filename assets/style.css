@@ -870,3 +870,4 @@ html.anim .muncul .tick i,html.anim .tick.muncul i{transform:none}
 /* perbaikan: header & saran pencarian selalu di atas konten */
 .nav{z-index:50!important}
 .saran{z-index:60}
+.m-sos{gap:8px 14px!important;flex-wrap:wrap}.m-sos a{font-size:.85rem}

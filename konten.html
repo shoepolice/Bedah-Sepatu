@@ -6,7 +6,7 @@
 <title>Konten — Shoe Police</title>
 <link rel="icon" href="assets/logo/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=25">
+<link rel="stylesheet" href="assets/style.css?v=26">
 </head>
 <body data-hal="konten">
 <main class="wrap isi-hal">
@@ -21,12 +21,12 @@
   <div class="embed-grid" id="ig"></div>
 </main>
 
-<script src="assets/app.js?v=25"></script>
+<script src="assets/app.js?v=26"></script>
 <script>
 SP.muatConfig().then(c => {
   const k = c.kontak || {};
   document.getElementById('tombol-sos').innerHTML =
-    [['YouTube', k.youtube], ['Instagram', k.instagram], ['Shoe Police Woman', k.instagramSPW], ['TikTok', k.tiktok]]
+    [['YouTube', k.youtube], ['TikTok', k.tiktok], ['Instagram', k.instagram], ['Femme Police', k.instagramSPW], ['NSP Project', k.instagramNSP]]
       .filter(x => x[1]).map(([t, u]) => `<a class="tombol garis" href="${u}" target="_blank" rel="noopener">${t}</a>`).join('');
 
   const yt = (c.videoYoutube || []).map(SP.ytId).filter(Boolean);
