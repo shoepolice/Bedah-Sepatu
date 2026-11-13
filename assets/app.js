@@ -19,6 +19,10 @@ const SP = {
     }
     if (!this.data) this.data = await (await fetch('data/sepatu.json', { cache: 'no-cache' })).json();
     (this.data.sepatu || []).forEach((s, i) => { s._urut = s._urut ?? i; s.tag = s.tag || []; });
+    // buang sepatu di daftar banding yang sudah tidak ada di database (misal id berubah setelah data diperbarui)
+    const ada = new Set((this.data.sepatu || []).map(s => s.id));
+    const b = this.ambilBanding(), bersih = b.filter(id => ada.has(id));
+    if (bersih.length !== b.length) this.simpanBanding(bersih);
     return this.data;
   },
 
@@ -238,9 +242,9 @@ const SP = {
         el.textContent = v.toLocaleString('id-ID', { minimumFractionDigits: d, maximumFractionDigits: d }); if (p < 1) requestAnimationFrame(langkah); };
       requestAnimationFrame(langkah);
     };
-    const target = akar.querySelectorAll('[data-reveal]:not(.muncul), [data-hitung]:not([data-selesai])');
+    const target = akar.querySelectorAll('[data-reveal]:not(.muncul), [data-hitung][data-nilai]:not([data-selesai])');
     if (!halus || !('IntersectionObserver' in window)) {
-      target.forEach(el => { el.classList.add('muncul'); if (el.hasAttribute('data-hitung')) { el.dataset.selesai = 1; el.textContent = (+el.dataset.nilai || 0).toLocaleString('id-ID', { minimumFractionDigits: +el.dataset.desimal || 0, maximumFractionDigits: +el.dataset.desimal || 0 }); } });
+      target.forEach(el => { el.classList.add('muncul'); if (el.hasAttribute('data-hitung') && el.hasAttribute('data-nilai')) { el.dataset.selesai = 1; el.textContent = (+el.dataset.nilai || 0).toLocaleString('id-ID', { minimumFractionDigits: +el.dataset.desimal || 0, maximumFractionDigits: +el.dataset.desimal || 0 }); } });
       return;
     }
     document.documentElement.classList.add('anim');
@@ -248,8 +252,8 @@ const SP = {
       if (!x.isIntersecting) return;
       const el = x.target; obs.unobserve(el);
       el.classList.add('muncul');
-      if (el.hasAttribute('data-hitung')) { el.dataset.selesai = 1; hitung(el); }
-      el.querySelectorAll?.('[data-hitung]:not([data-selesai])').forEach(n => { n.dataset.selesai = 1; hitung(n); });
+      if (el.hasAttribute('data-hitung') && el.hasAttribute('data-nilai')) { el.dataset.selesai = 1; hitung(el); }
+      el.querySelectorAll?.('[data-hitung][data-nilai]:not([data-selesai])').forEach(n => { n.dataset.selesai = 1; hitung(n); });
     }), { rootMargin: '0px 0px -8% 0px', threshold: .08 });
     target.forEach(el => obs.observe(el));
   },
