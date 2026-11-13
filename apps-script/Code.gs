@@ -14,12 +14,18 @@ const FILE_BEDAH = {
   'Safety Shoe': '13PbvszpZxTR0kdEj0NKibS6S9_qzLlHEhqXZ8eo9eY0',
   'Kulit':       '1g9dfSItLRPhqv6yfh6B_iZEpJKanzm2Z1DWDqAq27TY',
   'Hiking':      '1yNYb6EiwZrP9jDGw4N1C2ZRvJBorvgrPY5k4yZuv1VQ',
-  'Sandal':      '1pNyspZhC7ewUeWGWZaczYQWsxxjmuJecybSl6mGQnvc'
+  'Sandal':      '1pNyspZhC7ewUeWGWZaczYQWsxxjmuJecybSl6mGQnvc',
+  'Women':       '1lJ-56vjOJcU6MXoJi1zt_8Pe8shBgNRtLBgwupCXrwY'
 };
 // Tab yang dilewati (template / aturan / dummy). Huruf besar-kecil gak ngaruh.
-const TAB_DILEWATI = [/^rules$/i, /^form bedah/i, /dummy/i];
+const TAB_DILEWATI = [/^rules$/i, /^form /i, /dummy/i, /master/i];
 // Tab yang belum boleh tayang (misal bedah collab yang belum rilis) — tulis nama tab persis.
-const TAB_DISEMBUNYIKAN = [];
+const TAB_DISEMBUNYIKAN = [
+  'ANTA PG7 Travel', 'Anta Kai 3',          // brand partner: tunggu konfirmasi boleh tampil
+  'EVO SL DROP BALL', 'Ortuseight Solar 2.0', 'Mills Enercharge M1', // tab dobel
+];
+// Sepatu yang ada di form Sneakers & Court sekaligus → yang tampil versi Court
+const DOBEL_LINTAS = { 'Sneakers': ['AZA AD2', 'AZA AD3'] };
 // Kalau true, sepatu tanpa FINAL SCORE gak ditampilkan.
 const WAJIB_ADA_SKOR = true;
 // =========================
@@ -48,6 +54,7 @@ function bangunData() {
     ss.getSheets().forEach((sh, urut) => {
       const nama = sh.getName().trim();
       if (TAB_DILEWATI.some(r => r.test(nama)) || TAB_DISEMBUNYIKAN.indexOf(nama) > -1) return;
+      if ((DOBEL_LINTAS[kategori] || []).indexOf(nama) > -1) return;
       try {
         const s = parseTab_(sh, kategori);
         s._urut = urut; // urutan tab: tab paling kanan dianggap paling baru kalau tanggal tes kosong
@@ -73,7 +80,10 @@ function pasangTrigger() {
 function parseTab_(sh, kategori) {
   const rows = sh.getDataRange().getDisplayValues();
   const peta = {};           // label kolom A → baris pertama yang cocok
-  rows.forEach(r => { const k = norm_(r[0]); if (k && !(k in peta)) peta[k] = r; });
+  // label form sandal → label standar
+  const ALIAS = { 'berat sandal (1 pcs)': 'berat sepatu (1 pcs)', 'kategori sandal': 'sub type', 'midsole / footbed heel': 'midsole heel',
+    'midsole / footbed forefoot': 'midsole forefoot', 'jenis material midsole / footbed': 'jenis material midsole', 'stack at forefoot': 'stack at toe' };
+  rows.forEach(r => { let k = norm_(r[0]); k = ALIAS[k] || k; if (k && !(k in peta)) peta[k] = r; });
   const B = l => val_(peta[norm_(l)], 1);
   const D = l => val_(peta[norm_(l)], 3);
   const G = l => val_(peta[norm_(l)], 6);
@@ -103,9 +113,9 @@ function parseTab_(sh, kategori) {
     id: slug_(kategori + '-' + brand + '-' + model + '-' + sh.getSheetId()),
     tab: sh.getName(),
     kategori: kategori,
-    brand: brand,
-    model: model,
-    subtipe: B('Sub Type') || B('Kategori lari') || B('Kategori') || B('Sub type'),
+    brand: brand.replace(/\s+/g, ' ').trim(),
+    model: model.replace(/\s+/g, ' ').trim(),
+    subtipe: B('Sub Type') || B('Kategori lari') || B('Kategori court') || B('Tipe sepatu') || B('Kategori sepatu cewek') || B('Jenis hak'),
     size: B('Size (EU)'),
     harga: B('Harga retail (Rp)'),
     tanggal: B('Tanggal tes'),
@@ -134,7 +144,8 @@ function parseTab_(sh, kategori) {
     klaimHasil: klaimLengkap,
     masalah: B('Masalah yang ditemukan'),
     video: B('Link video') || '',
-    tag: B('Tag website').split(',').map(x => x.trim()).filter(Boolean),
+    lengkap: layer.length > 0 && layer.every(l => l.skor !== null),
+    tag: B('Tag website').split(',').map(x => x.trim()).filter(Boolean).concat(kategori === 'Women' ? ['women', B('Jenis hak')].filter(Boolean) : []).concat(kategori === 'Sandal' ? ['sandal'] : []),
     foto: linkFoto_(B('Link foto'))
   };
 }

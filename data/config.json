@@ -86,10 +86,44 @@
         "sandal"
       ],
       "cocok": [
-        "hiking",
-        "outdoor",
         "gunung",
+        "outdoor",
+        "hiking",
         "trekking"
+      ]
+    },
+    {
+      "id": "recovery-sandals",
+      "nama": "Recovery Sandals",
+      "deskripsi": "Sandal pemulihan setelah lari & aktivitas",
+      "ikon": "sandal",
+      "gambar": "",
+      "wajib": [
+        "sandal"
+      ],
+      "cocok": [
+        "recovery"
+      ]
+    },
+    {
+      "id": "sandal-harian",
+      "nama": "Sandal Harian",
+      "deskripsi": "Sandal jepit, slide, dan clog",
+      "ikon": "sandal",
+      "gambar": "",
+      "wajib": [
+        "sandal"
+      ],
+      "cocok": [
+        "jepit",
+        "flip",
+        "slide",
+        "clog",
+        "slip"
+      ],
+      "kecuali": [
+        "gunung",
+        "recovery"
       ]
     },
     {

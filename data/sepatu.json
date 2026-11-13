@@ -1,9 +1,2341 @@
 {
- "_catatan": "Data cadangan (8 sepatu, sebagian kolom). Data lengkap otomatis dari Form Bedah lewat Apps Script.",
+ "_catatan": "Data dari Form Bedah (export 13 Nov 2026). Kalau Apps Script sudah dipasang, data live menggantikan file ini.",
  "diperbarui": "2026-11-13",
  "sepatu": [
   {
-   "id": "sneakers-ardiles-evolve-2-0",
+   "id": "running-ortuseight-hypersonic-pikachu-2",
+   "tab": "ORTUS_HYPERSONIC PIKACHU",
+   "kategori": "Running",
+   "brand": "Ortuseight",
+   "model": "Hypersonic Pikachu",
+   "subtipe": "Race (plate)",
+   "size": "43",
+   "harga": "Rp1.699.000",
+   "tanggal": "",
+   "tester": "",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "",
+     "skor": null,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "",
+     "skor": null,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "",
+     "skor": null,
+     "bobot": "55%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "Ortuseight (foam merek sendiri lain)",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "Gum rubber / natural rubber",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 0,
+   "lengkap": false
+  },
+  {
+   "id": "running-910-yuza-manglayang-4",
+   "tab": "910 Yuza Manglayang",
+   "kategori": "Running",
+   "brand": "910",
+   "model": "Yuza Manglayang",
+   "subtipe": "Trail",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Taofik Hidayat",
+   "skor": 8.3,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.0,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 273.4,
+    "reboundHeel": 44.2,
+    "reboundToe": 29.6,
+    "midsoleHeel": 10.0,
+    "midsoleForefoot": 12.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 33.5,
+    "stackToe": 24.8,
+    "drop": 8.7,
+    "upperSkor": 6.1,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 1,
+   "lengkap": true
+  },
+  {
+   "id": "running-unerd-montrex-5",
+   "tab": "Unerd Montrex",
+   "kategori": "Running",
+   "brand": "Unerd",
+   "model": "Montrex",
+   "subtipe": "Trail",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 8.1,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 282.1,
+    "reboundHeel": 39.2,
+    "reboundToe": 35.8,
+    "midsoleHeel": 12.0,
+    "midsoleForefoot": 10.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 29.2,
+    "stackToe": 18.5,
+    "drop": 10.7,
+    "upperSkor": 4.3,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 2,
+   "lengkap": true
+  },
+  {
+   "id": "running-adidas-hyperboost-run-6",
+   "tab": "Adidas Hyperboost Run",
+   "kategori": "Running",
+   "brand": "Adidas",
+   "model": "Hyperboost Run",
+   "subtipe": "",
+   "size": "43 1/3",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Evan",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 245.6,
+    "reboundHeel": 56.0,
+    "reboundToe": 52.2,
+    "midsoleHeel": 9.5,
+    "midsoleForefoot": 15.0,
+    "materialMidsole": "",
+    "stackHeel": 32.6,
+    "stackToe": 25.6,
+    "drop": 7.0,
+    "upperSkor": 5.4,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "Continental Rubber (road)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 3,
+   "lengkap": true
+  },
+  {
+   "id": "running-adidas-evo-sl-woven-7",
+   "tab": "ADIDAS EVO SL WOVEN",
+   "kategori": "Running",
+   "brand": "ADIDAS",
+   "model": "EVO SL WOVEN",
+   "subtipe": "Tempo / super trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.6,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.2,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.2,
+     "bobot": "50%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 243.3,
+    "reboundHeel": 56.4,
+    "reboundToe": 47.8,
+    "midsoleHeel": 20.0,
+    "midsoleForefoot": 16.5,
+    "materialMidsole": "Supercritical EVA (nitrogen-infused)",
+    "stackHeel": 33.2,
+    "stackToe": 24.2,
+    "drop": 9.0,
+    "upperSkor": 6.6,
+    "outsoleSkor": 6.0,
+    "outsoleMaterial": "Continental Rubber (road)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "Bukan untuk jalan, semua karakter geometrinya di optimize untuk lari",
+   "video": "",
+   "_urut": 4,
+   "lengkap": true
+  },
+  {
+   "id": "running-mills-hypercharge-8",
+   "tab": "Mills Hypercharge",
+   "kategori": "Running",
+   "brand": "Mills",
+   "model": "Hypercharge",
+   "subtipe": "Race (plate)",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Kang Rija",
+   "skor": 7.4,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Below Average",
+     "skor": 5.9,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Fair",
+     "skor": 6.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.8,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.0,
+     "bobot": "55%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 160.5,
+    "reboundHeel": 51.4,
+    "reboundToe": 55.8,
+    "midsoleHeel": 8.0,
+    "midsoleForefoot": 7.0,
+    "materialMidsole": "",
+    "stackHeel": 31.3,
+    "stackToe": 26.1,
+    "drop": 5.2,
+    "upperSkor": 2.5,
+    "outsoleSkor": 5.0,
+    "outsoleMaterial": "Mills (compound merek sendiri)",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 5,
+   "lengkap": true
+  },
+  {
+   "id": "running-asics-novablast-6-9",
+   "tab": "ASICS NovaBlast 6",
+   "kategori": "Running",
+   "brand": "ASICS",
+   "model": "Novablast 6",
+   "subtipe": "Daily trainer",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dhea",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 275.4,
+    "reboundHeel": 43.8,
+    "reboundToe": 49.6,
+    "midsoleHeel": 10.0,
+    "midsoleForefoot": 10.3,
+    "materialMidsole": "",
+    "stackHeel": 44.6,
+    "stackToe": 34.3,
+    "drop": 10.3,
+    "upperSkor": 7.8,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 6,
+   "lengkap": true
+  },
+  {
+   "id": "running-nike-vomero-18-10",
+   "tab": "Nike Vomero 18",
+   "kategori": "Running",
+   "brand": "Nike",
+   "model": "Vomero 18",
+   "subtipe": "Daily trainer",
+   "size": "40,5",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dhea",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 9.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 271.8,
+    "reboundHeel": 43.0,
+    "reboundToe": 44.2,
+    "midsoleHeel": 11.5,
+    "midsoleForefoot": 12.0,
+    "materialMidsole": "PEBA / Pebax",
+    "stackHeel": 32.9,
+    "stackToe": 21.0,
+    "drop": 11.9,
+    "upperSkor": 7.8,
+    "outsoleSkor": 9.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 7,
+   "lengkap": true
+  },
+  {
+   "id": "running-puma-deviate-pure-11",
+   "tab": "Puma Deviate Pure",
+   "kategori": "Running",
+   "brand": "Puma",
+   "model": "Deviate Pure",
+   "subtipe": "Tempo / super trainer",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Kang Rija",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "50%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 249.3,
+    "reboundHeel": 49.8,
+    "reboundToe": 54.8,
+    "midsoleHeel": 13.5,
+    "midsoleForefoot": 13.0,
+    "materialMidsole": "Supercritical EVA (nitrogen-infused)",
+    "stackHeel": 36.8,
+    "stackToe": 28.4,
+    "drop": 8.4,
+    "upperSkor": 5.3,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 8,
+   "lengkap": true
+  },
+  {
+   "id": "running-asics-novablast-5-12",
+   "tab": "ASICS NovaBlast 5",
+   "kategori": "Running",
+   "brand": "ASICS",
+   "model": "NovaBlast 5",
+   "subtipe": "",
+   "size": "NONE",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 9.0,
+   "verdict": "Excellent",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Excellent",
+     "skor": 9.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "",
+     "skor": null,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": 50.6,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 9,
+   "lengkap": false
+  },
+  {
+   "id": "running-asics-novablast-4-13",
+   "tab": "ASICS NovaBlast 4",
+   "kategori": "Running",
+   "brand": "ASICS",
+   "model": "NovaBlast 4",
+   "subtipe": "",
+   "size": "NONE",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 8.5,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "",
+     "skor": null,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": 48.4,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 10,
+   "lengkap": false
+  },
+  {
+   "id": "running-nike-zegama-16",
+   "tab": "Nike Zegama",
+   "kategori": "Running",
+   "brand": "Nike",
+   "model": "Zegama",
+   "subtipe": "Trail",
+   "size": "46",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 366.9,
+    "reboundHeel": 38.8,
+    "reboundToe": 50.8,
+    "midsoleHeel": 13.0,
+    "midsoleForefoot": 11.5,
+    "materialMidsole": "PEBA / Pebax",
+    "stackHeel": 38.2,
+    "stackToe": 27.1,
+    "drop": 11.1,
+    "upperSkor": 3.8,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "Vibram Megagrip",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 11,
+   "lengkap": true
+  },
+  {
+   "id": "running-adidas-evo-sl-17",
+   "tab": "EVO SL Baru",
+   "kategori": "Running",
+   "brand": "Adidas",
+   "model": "Evo SL",
+   "subtipe": "Tempo / super trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Evan",
+   "skor": 7.4,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Fair",
+     "skor": 7.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.6,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "50%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 210.4,
+    "reboundHeel": 56.0,
+    "reboundToe": 47.6,
+    "midsoleHeel": 15.0,
+    "midsoleForefoot": 15.0,
+    "materialMidsole": "",
+    "stackHeel": 37.8,
+    "stackToe": 28.9,
+    "drop": 8.9,
+    "upperSkor": 6.4,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "Continental Rubber (road)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 12,
+   "lengkap": true
+  },
+  {
+   "id": "running-adidas-adizero-pacer-18",
+   "tab": "Adizero Pacer",
+   "kategori": "Running",
+   "brand": "Adidas",
+   "model": "Adizero Pacer",
+   "subtipe": "Daily trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 7.3,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Fair",
+     "skor": 6.8,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 262.1,
+    "reboundHeel": 41.8,
+    "reboundToe": 35.0,
+    "midsoleHeel": 20.5,
+    "midsoleForefoot": 21.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 40.8,
+    "stackToe": 27.9,
+    "drop": 12.9,
+    "upperSkor": 6.5,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "Adidas Adiwear",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 13,
+   "lengkap": true
+  },
+  {
+   "id": "running-mills-dynaplate-19",
+   "tab": "Mills Dynaplate",
+   "kategori": "Running",
+   "brand": "Mills",
+   "model": "Dynaplate",
+   "subtipe": "",
+   "size": "NONE",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dhea",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.7,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 189.5,
+    "reboundHeel": 51.6,
+    "reboundToe": 50.8,
+    "midsoleHeel": 14.5,
+    "midsoleForefoot": 24.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 32.8,
+    "stackToe": 24.5,
+    "drop": 8.3,
+    "upperSkor": 5.1,
+    "outsoleSkor": 6.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 14,
+   "lengkap": true
+  },
+  {
+   "id": "running-geoff-max-mx-faster-v2-20",
+   "tab": "Geoff MX Faster V2",
+   "kategori": "Running",
+   "brand": "Geoff Max",
+   "model": "MX Faster V2",
+   "subtipe": "Trail",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Karyo",
+   "skor": 7.4,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.4,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 275.8,
+    "reboundHeel": 44.8,
+    "reboundToe": 40.6,
+    "midsoleHeel": 12.0,
+    "midsoleForefoot": 17.0,
+    "materialMidsole": "",
+    "stackHeel": 30.2,
+    "stackToe": 16.1,
+    "drop": 14.1,
+    "upperSkor": 3.9,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 15,
+   "lengkap": true
+  },
+  {
+   "id": "running-geoff-max-mx-faster-v1-21",
+   "tab": "Geoff MX Faster V1",
+   "kategori": "Running",
+   "brand": "Geoff Max",
+   "model": "MX Faster V1",
+   "subtipe": "Trail",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 291.3,
+    "reboundHeel": 46.8,
+    "reboundToe": 43.0,
+    "midsoleHeel": 12.0,
+    "midsoleForefoot": 14.5,
+    "materialMidsole": "",
+    "stackHeel": 31.1,
+    "stackToe": 19.1,
+    "drop": 12.0,
+    "upperSkor": 5.6,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 16,
+   "lengkap": true
+  },
+  {
+   "id": "running-asics-trabuco-14-22",
+   "tab": "Asics Trabuco 14",
+   "kategori": "Running",
+   "brand": "Asics",
+   "model": "Trabuco 14",
+   "subtipe": "Trail",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 8.2,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Excellent",
+     "skor": 9.2,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 280.0,
+    "reboundHeel": 50.0,
+    "reboundToe": 50.0,
+    "midsoleHeel": 12.0,
+    "midsoleForefoot": 13.5,
+    "materialMidsole": "",
+    "stackHeel": 35.5,
+    "stackToe": 24.9,
+    "drop": 10.6,
+    "upperSkor": 9.0,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 17,
+   "lengkap": true
+  },
+  {
+   "id": "running-gumi-vega-23",
+   "tab": "GUMI Vega",
+   "kategori": "Running",
+   "brand": "GUMI",
+   "model": "Vega",
+   "subtipe": "Daily trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 6.8,
+   "verdict": "Fair",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Below Average",
+     "skor": 5.6,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 347.0,
+    "reboundHeel": 39.2,
+    "reboundToe": 42.2,
+    "midsoleHeel": 15.0,
+    "midsoleForefoot": 13.5,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 41.3,
+    "stackToe": 31.5,
+    "drop": 9.8,
+    "upperSkor": 7.1,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 18,
+   "lengkap": true
+  },
+  {
+   "id": "running-ortus-hyperblast-3-0-24",
+   "tab": "Ortus Hyper Blast 3.0",
+   "kategori": "Running",
+   "brand": "Ortus",
+   "model": "Hyperblast 3.0",
+   "subtipe": "Daily trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Fair",
+     "skor": 6.7,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 272.2,
+    "reboundHeel": 43.4,
+    "reboundToe": 35.8,
+    "midsoleHeel": 12.0,
+    "midsoleForefoot": 11.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 30.1,
+    "stackToe": 23.6,
+    "drop": 6.5,
+    "upperSkor": 8.3,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "Sebagai sepatu jalan tidak ada issue yang berarti. Konsisten firmness solnya sejak km 0 hingga 22. Tetapi semakin cepat terobservasi extra bounce. Dan load di lutut (tester punya cedera lutut menahun) minimal hingga km 18. Mulai kumat tetapi tidak kumat parah dan berangsur berkurang dengan pengurangan kecepatan jalan. Untuk orang overweight terasa stabil",
+   "video": "",
+   "_urut": 19,
+   "lengkap": true
+  },
+  {
+   "id": "running-ardiles-runnergize-26",
+   "tab": "Ardiles RunnerGIze",
+   "kategori": "Running",
+   "brand": "Ardiles",
+   "model": "RunnerGize",
+   "subtipe": "Race (plate)",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Kang Rija",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "55%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 221.5,
+    "reboundHeel": 48.6,
+    "reboundToe": 42.6,
+    "midsoleHeel": 14.0,
+    "midsoleForefoot": 12.5,
+    "materialMidsole": "Supercritical EVA (nitrogen-infused)",
+    "stackHeel": 40.4,
+    "stackToe": 25.0,
+    "drop": 15.4,
+    "upperSkor": 4.7,
+    "outsoleSkor": 6.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 20,
+   "lengkap": true
+  },
+  {
+   "id": "running-910-aurorun-stride-27",
+   "tab": "910 AURORUN STRIDE",
+   "kategori": "Running",
+   "brand": "910",
+   "model": "AURORUN STRIDE",
+   "subtipe": "Daily trainer",
+   "size": "40",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.6,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 221.6,
+    "reboundHeel": 40.6,
+    "reboundToe": 37.6,
+    "midsoleHeel": 19.0,
+    "midsoleForefoot": 18.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 33.0,
+    "stackToe": 19.6,
+    "drop": 13.4,
+    "upperSkor": 4.0,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 21,
+   "lengkap": true
+  },
+  {
+   "id": "running-ortus-solar-2-0-28",
+   "tab": "Ortus Solar 2.0",
+   "kategori": "Running",
+   "brand": "Ortus",
+   "model": "Solar 2.0",
+   "subtipe": "Race (plate)",
+   "size": "47",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Kang Rija",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "55%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 223.7,
+    "reboundHeel": 54.0,
+    "reboundToe": 47.0,
+    "midsoleHeel": 11.5,
+    "midsoleForefoot": 12.5,
+    "materialMidsole": "PEBA / Pebax",
+    "stackHeel": 36.0,
+    "stackToe": 22.5,
+    "drop": 13.5,
+    "upperSkor": 4.0,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 22,
+   "lengkap": true
+  },
+  {
+   "id": "running-mills-enercharge-m1-29",
+   "tab": "MILLS Enercharge M 1",
+   "kategori": "Running",
+   "brand": "Mills",
+   "model": "Enercharge M1",
+   "subtipe": "Race (plate)",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Evan",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "55%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 293.4,
+    "reboundHeel": 47.6,
+    "reboundToe": 49.6,
+    "midsoleHeel": 15.5,
+    "midsoleForefoot": 13.0,
+    "materialMidsole": "",
+    "stackHeel": 35.7,
+    "stackToe": 26.4,
+    "drop": 9.3,
+    "upperSkor": 6.9,
+    "outsoleSkor": 4.0,
+    "outsoleMaterial": "",
+    "gripKering": "Medium",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 23,
+   "lengkap": true
+  },
+  {
+   "id": "running-mills-enercharge-m2-32",
+   "tab": "MILLS ENERCHARGE M2",
+   "kategori": "Running",
+   "brand": "MILLS",
+   "model": "ENERCHARGE M2",
+   "subtipe": "",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Evan",
+   "skor": 7.9,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 271.3,
+    "reboundHeel": 48.6,
+    "reboundToe": 54.2,
+    "midsoleHeel": 12.5,
+    "midsoleForefoot": 13.5,
+    "materialMidsole": "",
+    "stackHeel": 43.4,
+    "stackToe": 32.1,
+    "drop": 11.3,
+    "upperSkor": 5.5,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 24,
+   "lengkap": true
+  },
+  {
+   "id": "running-akross-traxion-moa-33",
+   "tab": "Akross Traxion Moa",
+   "kategori": "Running",
+   "brand": "Akross",
+   "model": "TRAXION Moa",
+   "subtipe": "",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.2,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Fair",
+     "skor": 6.7,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 333.8,
+    "reboundHeel": 37.4,
+    "reboundToe": 38.4,
+    "midsoleHeel": 18.5,
+    "midsoleForefoot": 17.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 32.1,
+    "stackToe": 22.9,
+    "drop": 9.2,
+    "upperSkor": 6.6,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 25,
+   "lengkap": true
+  },
+  {
+   "id": "running-on-cloudsurfer-34",
+   "tab": "On Cloudsurfer",
+   "kategori": "Running",
+   "brand": "On",
+   "model": "Cloudsurfer",
+   "subtipe": "Daily trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 6.8,
+   "verdict": "Fair",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Poor",
+     "skor": 4.9,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 259.5,
+    "reboundHeel": 46.6,
+    "reboundToe": 45.8,
+    "midsoleHeel": 22.5,
+    "midsoleForefoot": 22.0,
+    "materialMidsole": "",
+    "stackHeel": 31.6,
+    "stackToe": 27.0,
+    "drop": 4.6,
+    "upperSkor": 4.0,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "- dipake jalan jauh ga enak banget, mungkin karena medannya banyak turunan soalnya turun gunung ciwideykan\n- Kalau misal dipake 2-3 jam buat commute msh oke\n- Uppernya sedikit gerah, tapi ngejaga banget ga ada slip sama sekali\n- outsolenya bagus banget gripnya, terbaik dari semua sepatu jalaton\n- Ringannya ngebantu pas jalan jadi ga pegel even buat jalaton\n- Talinya bagus, walau diiket kenceng ga sakit di punggung kaki\n- Cuma heel pad yang belakang itu rada ganggu, sering nabrak tumit\n- Buat berdiri lama kayanya oke tapi ga cocok untuk bb berlebih\n- karakter midsolenya harus dipake buat lari itu mah, jadi energy return kalau buat jalan ga akan kerasa\n- liningnya bagus lembut nyaman banget\n- Minus paling kerasa cuma di colorway putih aja gampang banget kotor dan susah banget dibersihin",
+   "video": "",
+   "_urut": 26,
+   "lengkap": true
+  },
+  {
+   "id": "running-ortuseight-hyperblast-2-35",
+   "tab": "Ortus Hyperblast 2",
+   "kategori": "Running",
+   "brand": "Ortuseight",
+   "model": "Hyperblast 2",
+   "subtipe": "Daily trainer",
+   "size": "40",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.4,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": 47.4,
+    "reboundToe": 30.8,
+    "midsoleHeel": 10.0,
+    "midsoleForefoot": 13.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 34.3,
+    "stackToe": 23.2,
+    "drop": 11.1,
+    "upperSkor": 8.0,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 27,
+   "lengkap": true
+  },
+  {
+   "id": "running-unerd-beat-axis-36",
+   "tab": "Unerd Beat Axis",
+   "kategori": "Running",
+   "brand": "Unerd",
+   "model": "Beat Axis",
+   "subtipe": "Tempo / super trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 7.2,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Below Average",
+     "skor": 5.6,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Below Average",
+     "skor": 5.8,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "50%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 275.8,
+    "reboundHeel": 41.6,
+    "reboundToe": 31.2,
+    "midsoleHeel": 16.0,
+    "midsoleForefoot": 10.0,
+    "materialMidsole": "Supercritical EVA (nitrogen-infused)",
+    "stackHeel": 41.7,
+    "stackToe": 28.9,
+    "drop": 12.8,
+    "upperSkor": 6.5,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "Super trainer",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 28,
+   "lengkap": true
+  },
+  {
+   "id": "running-puma-deviate-nitro-4-37",
+   "tab": "Deviate Nitro 4",
+   "kategori": "Running",
+   "brand": "Puma",
+   "model": "Deviate Nitro 4",
+   "subtipe": "Tempo / super trainer",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Evan",
+   "skor": 7.7,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "50%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 260.4,
+    "reboundHeel": 50.4,
+    "reboundToe": 43.0,
+    "midsoleHeel": 19.5,
+    "midsoleForefoot": 4.0,
+    "materialMidsole": "PEBA / Pebax",
+    "stackHeel": 35.4,
+    "stackToe": 25.9,
+    "drop": 9.5,
+    "upperSkor": 7.5,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "PUMAGRIP",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "mild fatigue at ball of foot",
+   "video": "",
+   "_urut": 29,
+   "lengkap": true
+  },
+  {
+   "id": "running-adidas-adizero-pro-evo-2-39",
+   "tab": "Adizero Adios Pro Evo 2",
+   "kategori": "Running",
+   "brand": "Adidas",
+   "model": "Adizero Pro Evo 2",
+   "subtipe": "Race (plate)",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Evan",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Below Average",
+     "skor": 5.5,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.1,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Very Good",
+     "skor": 8.0,
+     "bobot": "55%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": 53.0,
+    "reboundToe": null,
+    "midsoleHeel": 17.0,
+    "midsoleForefoot": 16.5,
+    "materialMidsole": "Supercritical EVA (nitrogen-infused)",
+    "stackHeel": 38.1,
+    "stackToe": 27.6,
+    "drop": 10.5,
+    "upperSkor": 6.3,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "Medium",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "Hyper Shoes and will last only 1 race",
+   "klaimHasil": "",
+   "masalah": "sepatu terasa tidak stabil saat berjalan karena feel midsolenya, rocker membantu langkah dan memaksa cepat saat berjalan, dan pegal saat penggunaan lama terutama di bagian jari jari dan vamp depan.",
+   "video": "",
+   "_urut": 30,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-jim-joker-moxy-1ba-2",
+   "tab": "JIM JOKER_MOXY 1BA",
+   "kategori": "Sneakers",
+   "brand": "Jim Joker",
+   "model": "Moxy 1BA",
+   "subtipe": "Hybrid outdoor / gorpcore",
+   "size": "43",
+   "harga": "Rp1.099.000",
+   "tanggal": "",
+   "tester": "",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "EVA",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "Grip agresif, Tangguh, Fungsional",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 31,
+   "lengkap": false
+  },
+  {
+   "id": "sneakers-jim-joker-gael-1ca-3",
+   "tab": "JIM JOKER_GAEL 1CA",
+   "kategori": "Sneakers",
+   "brand": "Jim Joker",
+   "model": "Gael 1CA",
+   "subtipe": "Lifestyle",
+   "size": "43",
+   "harga": "Rp1.099.000",
+   "tanggal": "",
+   "tester": "",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "Phylite (EVA + karet)",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "Phylon / Phylite (exposed)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "Grip anti-slip, Durable, Light and Comfort",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 32,
+   "lengkap": false
+  },
+  {
+   "id": "sneakers-ardiles-evolve-2-0-4",
+   "tab": "ARDILES_EVOLVE 2.0",
    "kategori": "Sneakers",
    "brand": "Ardiles",
    "model": "Evolve 2.0",
@@ -40,14 +2372,16 @@
      "bobot": "30%"
     }
    ],
+   "foto": "",
+   "tag": [],
    "angka": {
     "berat": 301.7,
     "reboundHeel": 34.0,
     "reboundToe": 34.4,
-    "midsoleHeel": 14,
+    "midsoleHeel": 14.0,
     "midsoleForefoot": 13.5,
-    "materialMidsole": "IMEVA / Phylon — MoveFit Foam",
-    "stackHeel": 44,
+    "materialMidsole": "IMEVA / Phylon (injection EVA)",
+    "stackHeel": 44.0,
     "stackToe": 29.4,
     "drop": 14.6,
     "upperSkor": 5.5,
@@ -57,37 +2391,131 @@
     "gripBasah": "Medium",
     "sizing": "True to size"
    },
-   "klaim": "Breathable Mesh, UltraGrip Outsole, Lightweight & Ultracomfort (nyaman dipakai berjalan kaki lama)",
+   "klaim": "Breathable Mesh, UltraGrip Outsole, Lightweight & Ultracomfort (Nyaman dipakai berjalan kaki lama)",
    "klaimHasil": "Sebagian terbukti",
    "masalah": "Outsole ketika di lantai basah masih sedikit licin",
    "video": "",
-   "foto": ""
+   "_urut": 33,
+   "lengkap": true
   },
   {
-   "id": "running-asics-novablast-6",
-   "kategori": "Running",
-   "brand": "ASICS",
-   "model": "Novablast 6",
-   "subtipe": "Daily trainer",
-   "size": "42",
+   "id": "sneakers-ardiles-atf-jasper-5",
+   "tab": "Ardiles Atf Jasper",
+   "kategori": "Sneakers",
+   "brand": "Ardiles",
+   "model": "Atf Jasper",
+   "subtipe": "Lifestyle",
+   "size": "43",
    "harga": "",
    "tanggal": "",
-   "tester": "Dhea",
+   "tester": "",
    "skor": 7.8,
-   "verdict": "",
-   "layer": [],
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
    "angka": {
-    "berat": 275.4,
-    "reboundHeel": 43.8,
-    "reboundToe": 49.6,
-    "midsoleHeel": 10,
-    "midsoleForefoot": 10.3,
+    "berat": 336.3,
+    "reboundHeel": 36.2,
+    "reboundToe": 33.4,
+    "midsoleHeel": 16.5,
+    "midsoleForefoot": 17.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 36.5,
+    "stackToe": 20.5,
+    "drop": 16.0,
+    "upperSkor": 5.2,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "bisa dipake hiking tipis-tipis",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 34,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-gahalu-wakatobi-6",
+   "tab": "Gahalu Wakatobi",
+   "kategori": "Sneakers",
+   "brand": "Gahalu",
+   "model": "Wakatobi",
+   "subtipe": "Lifestyle",
+   "size": "46",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 8.3,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 291.6,
+    "reboundHeel": 40.8,
+    "reboundToe": 39.2,
+    "midsoleHeel": 31.0,
+    "midsoleForefoot": 29.0,
     "materialMidsole": "",
-    "stackHeel": 44.6,
-    "stackToe": 34.3,
-    "drop": 10.3,
-    "upperSkor": 9.0,
-    "outsoleSkor": 8.0,
+    "stackHeel": 18.0,
+    "stackToe": 13.4,
+    "drop": 4.6,
+    "upperSkor": 6.0,
+    "outsoleSkor": 9.5,
     "outsoleMaterial": "",
     "gripKering": "",
     "gripBasah": "",
@@ -97,10 +2525,77 @@
    "klaimHasil": "",
    "masalah": "",
    "video": "",
-   "foto": ""
+   "_urut": 35,
+   "lengkap": false
   },
   {
-   "id": "sneakers-footstep-arthur",
+   "id": "sneakers-aerostreet-toleranshoes-7",
+   "tab": "Aerostreet Toleranshoes",
+   "kategori": "Sneakers",
+   "brand": "Aerostreet",
+   "model": "Toleranshoes",
+   "subtipe": "Lifestyle",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Karyo",
+   "skor": 7.7,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.7,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 455.0,
+    "reboundHeel": 27.6,
+    "reboundToe": 25.0,
+    "midsoleHeel": 22.5,
+    "midsoleForefoot": 25.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 32.2,
+    "stackToe": 22.1,
+    "drop": 10.1,
+    "upperSkor": 6.1,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "EVA / foam tanpa lapisan karet",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 36,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-footstep-arthur-8",
+   "tab": "Footstep Arthur",
    "kategori": "Sneakers",
    "brand": "Footstep",
    "model": "Arthur",
@@ -110,21 +2605,62 @@
    "tanggal": "",
    "tester": "",
    "skor": 4.6,
-   "verdict": "",
-   "layer": [],
+   "verdict": "Poor",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Poor",
+     "skor": 4.6,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "30%"
+    }
+   ],
    "foto": "",
+   "tag": [],
    "angka": {
     "berat": 276.6,
     "reboundHeel": 42.4,
-    "reboundToe": 34.8
+    "reboundToe": 34.8,
+    "midsoleHeel": 17.0,
+    "midsoleForefoot": 24.0,
+    "materialMidsole": "IMEVA / Phylon (injection EVA)",
+    "stackHeel": 33.7,
+    "stackToe": 21.5,
+    "drop": 12.2,
+    "upperSkor": 3.5,
+    "outsoleSkor": 2.0,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
    },
    "klaim": "",
    "klaimHasil": "",
    "masalah": "",
-   "video": ""
+   "video": "",
+   "_urut": 37,
+   "lengkap": false
   },
   {
-   "id": "sneakers-unerd-x-makna-motion-0-1",
+   "id": "sneakers-unerd-x-makna-motion-0-1-11",
+   "tab": "UNERD Motion 0.1",
    "kategori": "Sneakers",
    "brand": "Unerd x Makna",
    "model": "Motion 0.1",
@@ -134,114 +2670,2468 @@
    "tanggal": "",
    "tester": "Dimas",
    "skor": 7.9,
-   "verdict": "",
-   "layer": [],
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "30%"
+    }
+   ],
    "foto": "",
+   "tag": [],
    "angka": {
     "berat": 448.6,
     "reboundHeel": 36.6,
-    "reboundToe": 33.2
+    "reboundToe": 33.2,
+    "midsoleHeel": 24.5,
+    "midsoleForefoot": 26.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 37.2,
+    "stackToe": 16.8,
+    "drop": 20.4,
+    "upperSkor": 2.9,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
    },
    "klaim": "",
    "klaimHasil": "",
    "masalah": "",
-   "video": ""
+   "video": "",
+   "_urut": 38,
+   "lengkap": true
   },
   {
-   "id": "sneakers-jim-joker-moxy-1ba",
+   "id": "sneakers-unerd-insurgent-unerd-x-stella-x-evil-13",
+   "tab": "Unerd Insurgent",
    "kategori": "Sneakers",
-   "brand": "Jim Joker",
-   "model": "Moxy 1BA",
-   "subtipe": "Hybrid outdoor / gorpcore",
+   "brand": "Unerd",
+   "model": "Insurgent (Unerd x Stella x Evil)",
+   "subtipe": "Lifestyle",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.1,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.6,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 325.1,
+    "reboundHeel": 35.8,
+    "reboundToe": 41.4,
+    "midsoleHeel": 11.0,
+    "midsoleForefoot": 15.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 35.9,
+    "stackToe": 17.0,
+    "drop": 18.9,
+    "upperSkor": 4.0,
+    "outsoleSkor": 6.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 39,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-koku-kratos-14",
+   "tab": "Koku Kratos",
+   "kategori": "Sneakers",
+   "brand": "Koku",
+   "model": "Kratos",
+   "subtipe": "Lifestyle",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.2,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Fair",
+     "skor": 6.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.6,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 718.5,
+    "reboundHeel": 41.0,
+    "reboundToe": 37.4,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 27.6,
+    "stackToe": 16.9,
+    "drop": 10.7,
+    "upperSkor": 7.4,
+    "outsoleSkor": 6.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 40,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-unerd-sienna-15",
+   "tab": "Unerd Sienna",
+   "kategori": "Sneakers",
+   "brand": "Unerd",
+   "model": "Sienna",
+   "subtipe": "Lifestyle",
+   "size": "40",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Yuli",
+   "skor": 8.2,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 267.0,
+    "reboundHeel": 37.8,
+    "reboundToe": 23.8,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 14.6,
+    "stackToe": 10.8,
+    "drop": 3.8,
+    "upperSkor": 6.5,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 41,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-patrobas-scholars-16",
+   "tab": "Patrobas Scholars",
+   "kategori": "Sneakers",
+   "brand": "Patrobas",
+   "model": "Scholars",
+   "subtipe": "Lifestyle",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 8.4,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.7,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 357.9,
+    "reboundHeel": 36.2,
+    "reboundToe": 28.6,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 14.2,
+    "stackToe": 8.2,
+    "drop": 6.0,
+    "upperSkor": 9.0,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 42,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-weidenmann-hinterhalt-01-17",
+   "tab": "WEIDENMANN HINTERHALT 01",
+   "kategori": "Sneakers",
+   "brand": "WEIDENMANN",
+   "model": "HINTERHALT 01",
+   "subtipe": "Lifestyle",
    "size": "43",
-   "harga": "Rp1.099.000",
-   "tanggal": "",
-   "tester": "",
-   "skor": 7.8,
-   "verdict": "",
-   "layer": [],
-   "foto": "",
-   "angka": {
-    "berat": null,
-    "reboundHeel": null,
-    "reboundToe": null
-   },
-   "klaim": "Grip agresif, Tangguh, Fungsional",
-   "klaimHasil": "",
-   "masalah": "",
-   "video": ""
-  },
-  {
-   "id": "running-nike-vomero-18",
-   "kategori": "Running",
-   "brand": "Nike",
-   "model": "Vomero 18",
-   "subtipe": "Daily trainer",
-   "size": "40,5",
    "harga": "",
    "tanggal": "",
-   "tester": "Dhea",
+   "tester": "Oky",
    "skor": 7.8,
-   "verdict": "",
-   "layer": [],
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "30%"
+    }
+   ],
    "foto": "",
+   "tag": [],
    "angka": {
-    "berat": 271.8,
-    "reboundHeel": 43.0,
-    "reboundToe": 44.2
+    "berat": 379.5,
+    "reboundHeel": 53.0,
+    "reboundToe": 51.6,
+    "midsoleHeel": 12.0,
+    "midsoleForefoot": 13.0,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 40.5,
+    "stackToe": 27.1,
+    "drop": 13.4,
+    "upperSkor": 6.7,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
    },
    "klaim": "",
    "klaimHasil": "",
    "masalah": "",
-   "video": ""
+   "video": "",
+   "_urut": 43,
+   "lengkap": true
   },
   {
-   "id": "running-adidas-hyperboost-run",
-   "kategori": "Running",
-   "brand": "Adidas",
-   "model": "Hyperboost Run",
-   "subtipe": "",
-   "size": "43 1/3",
-   "harga": "",
-   "tanggal": "",
-   "tester": "Evan",
-   "skor": 7.5,
-   "verdict": "",
-   "layer": [],
-   "foto": "",
-   "angka": {
-    "berat": 245.6,
-    "reboundHeel": 56.0,
-    "reboundToe": 52.2
-   },
-   "klaim": "",
-   "klaimHasil": "",
-   "masalah": "",
-   "video": ""
-  },
-  {
-   "id": "running-puma-deviate-pure",
-   "kategori": "Running",
-   "brand": "Puma",
-   "model": "Deviate Pure",
-   "subtipe": "Tempo / super trainer",
+   "id": "sneakers-weidenmann-hinterhalt-02-18",
+   "tab": "WEIDENMANN HINTERHALT 02",
+   "kategori": "Sneakers",
+   "brand": "WEIDENMANN",
+   "model": "HINTERHALT 02",
+   "subtipe": "Lifestyle",
    "size": "42",
    "harga": "",
    "tanggal": "",
-   "tester": "Kang Rija",
-   "skor": 8.0,
-   "verdict": "",
-   "layer": [],
+   "tester": "Oky",
+   "skor": 7.7,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "30%"
+    }
+   ],
    "foto": "",
+   "tag": [],
    "angka": {
-    "berat": 249.3,
-    "reboundHeel": 49.8,
-    "reboundToe": 54.8
+    "berat": 410.9,
+    "reboundHeel": 56.2,
+    "reboundToe": 48.4,
+    "midsoleHeel": 11.0,
+    "midsoleForefoot": 15.5,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 35.5,
+    "stackToe": 24.6,
+    "drop": 10.9,
+    "upperSkor": 6.7,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
    },
    "klaim": "",
    "klaimHasil": "",
    "masalah": "",
-   "video": ""
+   "video": "",
+   "_urut": 44,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-weidenmann-hinterhalt-03-19",
+   "tab": "WEIDENMANN HINTERHALT 03",
+   "kategori": "Sneakers",
+   "brand": "WEIDENMANN",
+   "model": "HINTERHALT 03",
+   "subtipe": "Lifestyle",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 7.7,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 409.1,
+    "reboundHeel": 50.0,
+    "reboundToe": 52.6,
+    "midsoleHeel": 10.5,
+    "midsoleForefoot": 11.5,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 37.8,
+    "stackToe": 24.7,
+    "drop": 13.1,
+    "upperSkor": 6.0,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 45,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-1489-20",
+   "tab": "1489",
+   "kategori": "Sneakers",
+   "brand": "1489",
+   "model": "",
+   "subtipe": "Lifestyle",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Om Bim",
+   "skor": 7.2,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.4,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 313.9,
+    "reboundHeel": 39.6,
+    "reboundToe": 33.8,
+    "midsoleHeel": 17.0,
+    "midsoleForefoot": 21.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 32.9,
+    "stackToe": 18.6,
+    "drop": 14.3,
+    "upperSkor": 6.1,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 46,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-910-mars-jezero-21",
+   "tab": "910 MARS JEZERO",
+   "kategori": "Sneakers",
+   "brand": "910",
+   "model": "MARS JEZERO",
+   "subtipe": "Lifestyle",
+   "size": "40",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 8.1,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 292.3,
+    "reboundHeel": 37.6,
+    "reboundToe": 40.8,
+    "midsoleHeel": 20.0,
+    "midsoleForefoot": 17.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 33.4,
+    "stackToe": 18.2,
+    "drop": 15.2,
+    "upperSkor": 6.8,
+    "outsoleSkor": 9.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 47,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-starstruck-starstruk-aldy-taher-22",
+   "tab": "Starstruk aldy taher",
+   "kategori": "Sneakers",
+   "brand": "Starstruck",
+   "model": "Starstruk aldy taher",
+   "subtipe": "Lifestyle",
+   "size": "41",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 8.3,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 361.2,
+    "reboundHeel": 37.8,
+    "reboundToe": 35.0,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 25.3,
+    "stackToe": 13.2,
+    "drop": 12.1,
+    "upperSkor": 7.5,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "Aldy Galagher Shoes",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 48,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-andre-antony-x-dotkoma-23",
+   "tab": "Andre Antony",
+   "kategori": "Sneakers",
+   "brand": "Andre Antony",
+   "model": "x dotkoma",
+   "subtipe": "Lifestyle",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 8.4,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.9,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 617.1,
+    "reboundHeel": 39.0,
+    "reboundToe": 34.4,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 36.6,
+    "stackToe": 15.7,
+    "drop": 20.9,
+    "upperSkor": 8.0,
+    "outsoleSkor": 9.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 49,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-unerd-dochi-24",
+   "tab": "Unerd Dochi",
+   "kategori": "Sneakers",
+   "brand": "Unerd",
+   "model": "Dochi",
+   "subtipe": "Lifestyle",
+   "size": "40",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 8.1,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 279.6,
+    "reboundHeel": 32.0,
+    "reboundToe": 35.4,
+    "midsoleHeel": 19.0,
+    "midsoleForefoot": 17.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 24.6,
+    "stackToe": 13.8,
+    "drop": 10.8,
+    "upperSkor": 6.0,
+    "outsoleSkor": 8.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "Medium",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 50,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-unerd-pippa-25",
+   "tab": "Unerd Pippa Mary Jane",
+   "kategori": "Sneakers",
+   "brand": "Unerd",
+   "model": "Pippa",
+   "subtipe": "Lifestyle",
+   "size": "39",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Alifa",
+   "skor": 8.3,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 177.2,
+    "reboundHeel": 35.8,
+    "reboundToe": 29.4,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 15.3,
+    "stackToe": 11.3,
+    "drop": 4.0,
+    "upperSkor": 7.4,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 51,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-ardiles-coventry-quantum-era-26",
+   "tab": "Ardiles Coventry Quantum Era",
+   "kategori": "Sneakers",
+   "brand": "Ardiles",
+   "model": "Coventry Quantum Era",
+   "subtipe": "Lifestyle",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.6,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 348.0,
+    "reboundHeel": 35.8,
+    "reboundToe": 39.0,
+    "midsoleHeel": 9.0,
+    "midsoleForefoot": 12.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 29.2,
+    "stackToe": 12.6,
+    "drop": 16.6,
+    "upperSkor": 7.5,
+    "outsoleSkor": 7.0,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "Low",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 52,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-brodo-loafers-hybrid-27",
+   "tab": "Brodo Loafers Hybrid",
+   "kategori": "Sneakers",
+   "brand": "Brodo",
+   "model": "Loafers Hybrid",
+   "subtipe": "Lifestyle",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 6.6,
+   "verdict": "Fair",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Below Average",
+     "skor": 5.4,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 346.2,
+    "reboundHeel": 35.2,
+    "reboundToe": 38.6,
+    "midsoleHeel": 16.5,
+    "midsoleForefoot": 17.5,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 37.1,
+    "stackToe": 20.9,
+    "drop": 16.2,
+    "upperSkor": 5.8,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "Tester menemukan bagian collar di kanan kiri depan, menekan bagian instep. Collar mengalami sedikit slip di bagian samping dan bukaannya cukup lebar saat bergerak tetapi bukan hal buruk dari segi fitting. Untuk berjalan terasa toe off terbantu sekali, dimudahkan lewat geometri rockernya dan sol terasa membantu dorongan lewat energy return",
+   "video": "",
+   "_urut": 53,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-brodo-ace-neptune-loafers-28",
+   "tab": "Brodo Ace Neptune Hybrid Loafer",
+   "kategori": "Sneakers",
+   "brand": "Brodo",
+   "model": "Ace Neptune Loafers",
+   "subtipe": "Lifestyle",
+   "size": "41",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 377.6,
+    "reboundHeel": 38.4,
+    "reboundToe": 38.8,
+    "midsoleHeel": 16.0,
+    "midsoleForefoot": 19.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 40.9,
+    "stackToe": 19.2,
+    "drop": 21.7,
+    "upperSkor": 8.0,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 54,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-patrobas-nomad-29",
+   "tab": "Patrobas Nomad",
+   "kategori": "Sneakers",
+   "brand": "Patrobas",
+   "model": "Nomad",
+   "subtipe": "Lifestyle",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 8.2,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Excellent",
+     "skor": 9.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 8.0,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 261.2,
+    "reboundHeel": 41.0,
+    "reboundToe": 38.6,
+    "midsoleHeel": 15.5,
+    "midsoleForefoot": 17.5,
+    "materialMidsole": "",
+    "stackHeel": 31.8,
+    "stackToe": 17.7,
+    "drop": 14.1,
+    "upperSkor": 8.0,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "",
+    "gripKering": "Medium",
+    "gripBasah": "Medium",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 55,
+   "lengkap": true
+  },
+  {
+   "id": "sneakers-fortuna-shoes-loafers-hybrid-30",
+   "tab": "Fortuna Loafers Hybrid",
+   "kategori": "Sneakers",
+   "brand": "Fortuna Shoes",
+   "model": "Loafers Hybrid",
+   "subtipe": "Lifestyle",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.6,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Excellent",
+     "skor": 9.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fungsi",
+     "kelas": "Fair",
+     "skor": 6.9,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Fair",
+     "skor": 6.4,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 491.7,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": 25.4,
+    "stackToe": 13.1,
+    "drop": 12.3,
+    "upperSkor": 8.0,
+    "outsoleSkor": 10.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "No big issue, quite normal for dress shoe standard",
+   "video": "",
+   "_urut": 56,
+   "lengkap": true
+  },
+  {
+   "id": "safety-shoe-dr-osha-apex-ankle-zip-5227-2",
+   "tab": "DR OSHA_APEX ANKLE ZIP 5227",
+   "kategori": "Safety Shoe",
+   "brand": "Dr. Osha",
+   "model": "Apex Ankle ZIP 5227",
+   "subtipe": "Slip-on / Chelsea",
+   "size": "40",
+   "harga": "Rp805.000",
+   "tanggal": "",
+   "tester": "Om Bim",
+   "skor": 7.0,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Proteksi",
+     "kelas": "Fair",
+     "skor": 6.7,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Material",
+     "kelas": "",
+     "skor": null,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & kenyamanan",
+     "kelas": "Good",
+     "skor": 7.6,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Kerja",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "25%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "PU (polyurethane) injection",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "PU dual density (PU/PU)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": "True to size"
+   },
+   "klaim": "S3 (safety standard), waterproof, anti nail midsole",
+   "klaimHasil": "Sebagian terbukti",
+   "masalah": "Punggung kaki terjepit oleh steel toe pada saat berlutut",
+   "video": "",
+   "_urut": 57,
+   "lengkap": false
+  },
+  {
+   "id": "safety-shoe-king-s-by-honeywell-kwd205cx-i-3",
+   "tab": "KING'S_KWD205CX-I",
+   "kategori": "Safety Shoe",
+   "brand": "King's by Honeywell",
+   "model": "KWD205CX-I",
+   "subtipe": "High cut / boots",
+   "size": "43",
+   "harga": "Rp515.000",
+   "tanggal": "",
+   "tester": "Herry Ramdani",
+   "skor": 6.1,
+   "verdict": "Fair",
+   "layer": [
+    {
+     "nama": "Proteksi",
+     "kelas": "Below Average",
+     "skor": 5.6,
+     "bobot": "35%"
+    },
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.6,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & kenyamanan",
+     "kelas": "Poor",
+     "skor": 4.2,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Kerja",
+     "kelas": "Poor",
+     "skor": 4.9,
+     "bobot": "15%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 800.0,
+    "reboundHeel": 33.2,
+    "reboundToe": null,
+    "midsoleHeel": 25.5,
+    "midsoleForefoot": null,
+    "materialMidsole": "PU dual density",
+    "stackHeel": 29.9,
+    "stackToe": null,
+    "drop": 12.3,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "PU dual density (PU/PU)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": "Selisih > 1/2 size"
+   },
+   "klaim": "Rigger boot pull-on (side pull-up strap), steel toe 200 J / 15 kN extra wide 5-toe, sol PU dual density SRC anti slip + antistatic + tahan minyak & asam/basa, full grain leather 2,0–2,2 mm, insole PU foam extra thick, lining out-fold anti lecet",
+   "klaimHasil": "",
+   "masalah": "Licin, Lekukan luar pada saat bergerak dan tekstur sepatu cukup terasa keras,",
+   "video": "",
+   "_urut": 58,
+   "lengkap": true
+  },
+  {
+   "id": "safety-shoe-cheetah-vulcan-5288-4",
+   "tab": "CHEETAH_VULCAN 5288",
+   "kategori": "Safety Shoe",
+   "brand": "Cheetah",
+   "model": "Vulcan 5288",
+   "subtipe": "High cut / boots",
+   "size": "43",
+   "harga": "Rp600.000",
+   "tanggal": "",
+   "tester": "Herry Ramdani",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Proteksi",
+     "kelas": "Very Good",
+     "skor": 8.7,
+     "bobot": "35%"
+    },
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & kenyamanan",
+     "kelas": "Below Average",
+     "skor": 5.3,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Kerja",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "15%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 815.7,
+    "reboundHeel": 44.4,
+    "reboundToe": null,
+    "midsoleHeel": 24.0,
+    "midsoleForefoot": null,
+    "materialMidsole": "PU (polyurethane) injection",
+    "stackHeel": 29.8,
+    "stackToe": null,
+    "drop": 11.5,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "PU / rubber (midsole PU + outsole karet)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": "Kebesaran 1/2 size"
+   },
+   "klaim": "Klaim HRO 300°C, Xtend PU Midsole (nyaman dan tahan panas\nsampai dengan masa simpan 2 tahun), Superior Anti Slip, Standar Compliance (S1 SR + HRO)",
+   "klaimHasil": "",
+   "masalah": "Terasa Agak kendor , di bagian Tongue , tetapi cukup baik dalam cengkraman",
+   "video": "",
+   "_urut": 59,
+   "lengkap": true
+  },
+  {
+   "id": "safety-shoe-timberland-pro-boondock-8-5",
+   "tab": "Timberland_Pro Boondock 8",
+   "kategori": "Safety Shoe",
+   "brand": "Timberland",
+   "model": "Pro Boondock 8",
+   "subtipe": "High cut / boots",
+   "size": "43,5",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 5.1,
+   "verdict": "Below Average",
+   "layer": [
+    {
+     "nama": "Proteksi",
+     "kelas": "Below Average",
+     "skor": 5.1,
+     "bobot": "35%"
+    },
+    {
+     "nama": "Material",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & kenyamanan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Kerja",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "PU dual density",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "TPU outsole",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "Composite safety toe · Electrical Hazard · waterproof membrane · outsole TPU tahan slip, minyak, abrasi & panas · rubber toe protector · anti-fatigue footbed",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 60,
+   "lengkap": false
+  },
+  {
+   "id": "court-ortuseight-jogosala-mewtwo-2",
+   "tab": "ORTUS_JOGOSALA MEWTWO",
+   "kategori": "Court",
+   "brand": "Ortuseight",
+   "model": "Jogosala Mewtwo",
+   "subtipe": "Futsal indoor (IC)",
+   "size": "43",
+   "harga": "Rp799.000,00",
+   "tanggal": "",
+   "tester": "",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "",
+     "skor": null,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.5,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fit & lockdown",
+     "kelas": "",
+     "skor": null,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "",
+     "skor": null,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Main",
+     "kelas": "",
+     "skor": null,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": null,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "Lainnya",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "Non-marking rubber",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 61,
+   "lengkap": false
+  },
+  {
+   "id": "court-ballerbro-x-beast-3",
+   "tab": "Ballerbro X-Beast",
+   "kategori": "Court",
+   "brand": "Ballerbro",
+   "model": "X-Beast",
+   "subtipe": "Basket indoor",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 8.2,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fit & lockdown",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Main",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 352.9,
+    "reboundHeel": 52.4,
+    "reboundToe": null,
+    "midsoleHeel": 15.5,
+    "midsoleForefoot": 16.0,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 31.7,
+    "stackToe": null,
+    "drop": 13.2,
+    "upperSkor": 6.2,
+    "outsoleSkor": 6.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 62,
+   "lengkap": true
+  },
+  {
+   "id": "court-aza-ad3-4",
+   "tab": "AZA AD3",
+   "kategori": "Court",
+   "brand": "AZA",
+   "model": "AD3",
+   "subtipe": "Basket indoor",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Tama, Ify",
+   "skor": 7.9,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.0,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fit & lockdown",
+     "kelas": "Good",
+     "skor": 7.0,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Main",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 447.3,
+    "reboundHeel": 40.4,
+    "reboundToe": null,
+    "midsoleHeel": 17.5,
+    "midsoleForefoot": 15.5,
+    "materialMidsole": "EVA",
+    "stackHeel": 29.1,
+    "stackToe": null,
+    "drop": 12.6,
+    "upperSkor": 5.4,
+    "outsoleSkor": 9.0,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 63,
+   "lengkap": true
+  },
+  {
+   "id": "court-ardiles-ad2-5",
+   "tab": "Ardiles AD2",
+   "kategori": "Court",
+   "brand": "Ardiles",
+   "model": "AD2",
+   "subtipe": "Basket indoor",
+   "size": "42",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Tema",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fit & lockdown",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Main",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 381.4,
+    "reboundHeel": 40.6,
+    "reboundToe": null,
+    "midsoleHeel": 23.0,
+    "midsoleForefoot": 21.5,
+    "materialMidsole": "",
+    "stackHeel": 25.0,
+    "stackToe": null,
+    "drop": 12.5,
+    "upperSkor": 6.3,
+    "outsoleSkor": 7.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 64,
+   "lengkap": true
+  },
+  {
+   "id": "women-axel-shoe-co-femme-slip-on-loafer-in-black-calf-2",
+   "tab": "AXEL SHOE_FEMME SOL BLACK CALF",
+   "kategori": "Women",
+   "brand": "Axel Shoe Co",
+   "model": "Femme Slip On Loafer in Black Calf",
+   "subtipe": "Loafer",
+   "size": "39",
+   "harga": "Rp1.800.000",
+   "tanggal": "Wed Nov 04 2026 15:00:00 GMT+0700 (Waktu Indonesia Barat)",
+   "tester": "Yuli",
+   "skor": 8.1,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material & finishing",
+     "kelas": "Good",
+     "skor": 7.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi & hak",
+     "kelas": "Very Good",
+     "skor": 8.6,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Comfort",
+     "kelas": "Very Good",
+     "skor": 8.7,
+     "bobot": "25%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "women",
+    "Block heel"
+   ],
+   "angka": {
+    "berat": 289.7,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": 8.4,
+    "outsoleSkor": 5.2,
+    "outsoleMaterial": "Kulit samak nabati (veg-tan leather)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": "Kebesaran 1/2 size"
+   },
+   "klaim": "Comfort & longevity",
+   "klaimHasil": "Terbukti",
+   "masalah": "ketika jalan di lantai keramik terasa licin",
+   "video": "",
+   "_urut": 65,
+   "lengkap": true
+  },
+  {
+   "id": "women-seraline-elsa-mules-3",
+   "tab": "SERALINE_ELSA MULES",
+   "kategori": "Women",
+   "brand": "Seraline",
+   "model": "Elsa Mules",
+   "subtipe": "Mules",
+   "size": "40",
+   "harga": "Rp385.000",
+   "tanggal": "",
+   "tester": "Umi",
+   "skor": 8.2,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material & finishing",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi & hak",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Comfort",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "30%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "women",
+    "Kitten heel (3-5 cm)"
+   ],
+   "angka": {
+    "berat": 177.2,
+    "reboundHeel": null,
+    "reboundToe": null,
+    "midsoleHeel": null,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": 8.5,
+    "outsoleSkor": 8.3,
+    "outsoleMaterial": "Lainnya",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": "True to size"
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "tumit terangkat saat jalan",
+   "video": "",
+   "_urut": 66,
+   "lengkap": true
+  },
+  {
+   "id": "sandal-spendco-alfafit-100",
+   "tab": "Spendco Alfafit",
+   "kategori": "Sandal",
+   "brand": "Spendco",
+   "model": "Alfafit",
+   "subtipe": "Recovery sandal",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 8.0,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Excellent",
+     "skor": 9.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Below Average",
+     "skor": 5.7,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": 222.2,
+    "reboundHeel": 51.4,
+    "reboundToe": 50.6,
+    "midsoleHeel": 16.5,
+    "midsoleForefoot": 15.5,
+    "materialMidsole": "Phylon / IMEVA",
+    "stackHeel": 31.8,
+    "stackToe": 16.9,
+    "drop": 14.9,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "lengkap": true,
+   "_urut": 67
+  },
+  {
+   "id": "sandal-porto-x-gio-101",
+   "tab": "Porto X Gio",
+   "kategori": "Sandal",
+   "brand": "Porto X",
+   "model": "Gio",
+   "subtipe": "",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 8.5,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "",
+     "skor": null,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": null,
+    "reboundHeel": 49.6,
+    "reboundToe": null,
+    "midsoleHeel": 10.5,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "lengkap": false,
+   "_urut": 68
+  },
+  {
+   "id": "sandal-porto-x-kyro-102",
+   "tab": "Porto X Kyro",
+   "kategori": "Sandal",
+   "brand": "Porto X",
+   "model": "Kyro",
+   "subtipe": "",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "",
+   "skor": 8.5,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "",
+     "skor": null,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "",
+     "skor": null,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": null,
+    "reboundHeel": 44.6,
+    "reboundToe": null,
+    "midsoleHeel": 11.0,
+    "midsoleForefoot": null,
+    "materialMidsole": "",
+    "stackHeel": null,
+    "stackToe": null,
+    "drop": null,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "lengkap": false,
+   "_urut": 69
+  },
+  {
+   "id": "sandal-weidenmann-strata-recovery-sandal-103",
+   "tab": "Weidenmann Recovery Sandal",
+   "kategori": "Sandal",
+   "brand": "Weidenmann",
+   "model": "Strata Recovery Sandal",
+   "subtipe": "Recovery sandal",
+   "size": "45",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.6,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": 204.0,
+    "reboundHeel": 48.4,
+    "reboundToe": 44.6,
+    "midsoleHeel": 15.0,
+    "midsoleForefoot": 16.0,
+    "materialMidsole": "Phylon / IMEVA",
+    "stackHeel": 33.1,
+    "stackToe": 23.9,
+    "drop": 9.2,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "lengkap": true,
+   "_urut": 70
+  },
+  {
+   "id": "sandal-portee-alpaca-104",
+   "tab": "Portee Alpaca",
+   "kategori": "Sandal",
+   "brand": "Portee",
+   "model": "Alpaca",
+   "subtipe": "Sandal gunung / outdoor",
+   "size": "46",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 8.2,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.1,
+     "bobot": "30%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.7,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "30%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "20%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": 423.2,
+    "reboundHeel": 40.4,
+    "reboundToe": 40.0,
+    "midsoleHeel": 21.5,
+    "midsoleForefoot": 20.5,
+    "materialMidsole": "",
+    "stackHeel": 31.3,
+    "stackToe": 20.0,
+    "drop": 11.3,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "lengkap": true,
+   "_urut": 71
+  },
+  {
+   "id": "sandal-outdoor-pro-gen-z-nxt-105",
+   "tab": "Outdoor Pro Gen Z NXT",
+   "kategori": "Sandal",
+   "brand": "Outdoor Pro",
+   "model": "Gen Z NXT",
+   "subtipe": "Sandal gunung / outdoor",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Oky",
+   "skor": 7.5,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.3,
+     "bobot": "30%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "Good",
+     "skor": 7.9,
+     "bobot": "30%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "20%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": 280.0,
+    "reboundHeel": 50.0,
+    "reboundToe": 39.8,
+    "midsoleHeel": 20.5,
+    "midsoleForefoot": 24.5,
+    "materialMidsole": "Phylon / IMEVA",
+    "stackHeel": 24.3,
+    "stackToe": 18.7,
+    "drop": 5.6,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "Recovery sandal yang bisa dipakai outdoor dengan teknologi Recharge Active",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "lengkap": true,
+   "_urut": 72
+  },
+  {
+   "id": "sandal-outdoor-adv-colesseum-max-tx-106",
+   "tab": "Outdoor ADV Coleseum Max JX",
+   "kategori": "Sandal",
+   "brand": "Outdoor Adv",
+   "model": "Colesseum Max TX",
+   "subtipe": "Sandal jepit (flip-flop)",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.8,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "Fair",
+     "skor": 6.3,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": 247.5,
+    "reboundHeel": 46.2,
+    "reboundToe": 39.8,
+    "midsoleHeel": 19.5,
+    "midsoleForefoot": 22.5,
+    "materialMidsole": "Phylon / IMEVA",
+    "stackHeel": 25.6,
+    "stackToe": 18.1,
+    "drop": 7.5,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "Sandal jepit gaya outdoor stylish dan stabil",
+   "klaimHasil": "",
+   "masalah": "Strap webbing terasa kasar khas bahan webbing. Betis tetap bekerja agak keras karena harus mengangkat sandal jepit. Grip di batu basah licin",
+   "video": "",
+   "lengkap": true,
+   "_urut": 73
+  },
+  {
+   "id": "sandal-outdoor-adv-colesseum-max-jx-107",
+   "tab": "Outdoor ADV Coleseum Max TX",
+   "kategori": "Sandal",
+   "brand": "Outdoor Adv",
+   "model": "Colesseum Max JX",
+   "subtipe": "Sandal gunung / outdoor",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.3,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "30%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Good",
+     "skor": 7.4,
+     "bobot": "20%"
+    },
+    {
+     "nama": "Fungsi & stabilitas",
+     "kelas": "Fair",
+     "skor": 6.4,
+     "bobot": "30%"
+    },
+    {
+     "nama": "Fit & comfort",
+     "kelas": "Very Good",
+     "skor": 8.4,
+     "bobot": "20%"
+    }
+   ],
+   "foto": "",
+   "tag": [
+    "sandal"
+   ],
+   "angka": {
+    "berat": 247.5,
+    "reboundHeel": 46.2,
+    "reboundToe": 39.8,
+    "midsoleHeel": 19.5,
+    "midsoleForefoot": 22.5,
+    "materialMidsole": "Phylon / IMEVA",
+    "stackHeel": 25.6,
+    "stackToe": 18.1,
+    "drop": 7.5,
+    "upperSkor": null,
+    "outsoleSkor": null,
+    "outsoleMaterial": "",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "Sandal gunung stylish dan stabil",
+   "klaimHasil": "",
+   "masalah": "Strap webbing terasa kasar khas bahan webbing. Grip di permukaan / batu basah licin",
+   "video": "",
+   "lengkap": true,
+   "_urut": 74
   }
  ]
 }

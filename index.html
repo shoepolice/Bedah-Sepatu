@@ -7,7 +7,7 @@
 <meta name="description" content="Shoe Police membedah sepatu di lab: berat, rebound midsole, kekerasan foam, ketahanan upper & outsole. Cari hasil bedah per kategori.">
 <link rel="icon" href="assets/logo/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20">
+<link rel="stylesheet" href="assets/style.css?v=22">
 </head>
 <body data-hal="beranda">
 <main>
@@ -102,7 +102,7 @@
   </section>
 </main>
 
-<script src="assets/app.js?v=20"></script>
+<script src="assets/app.js?v=22"></script>
 <script>
 (async () => {
   const [cfg, { sepatu = [] }] = await Promise.all([SP.muatConfig(), SP.muatData()]);
@@ -126,7 +126,7 @@
   $('marquee').innerHTML = isiM + isiM + isiM + isiM;
 
   // baru dibedah
-  $('baru').innerHTML = SP.terbaru(sepatu).slice(0, 10).map(s => `
+  $('baru').innerHTML = SP.terbaru(sepatu.filter(s => s.lengkap !== false)).slice(0, 10).map(s => `
     <a class="g-kartu" href="sepatu.html?id=${encodeURIComponent(s.id)}">
       <div class="g-foto">${SP.foto(s)}<span class="g-skor">${SP.ring(s.skor, 56)}</span></div>
       <div class="g-teks"><span>${e(s.kategori)}${s.subtipe ? ' · ' + e(s.subtipe) : ''}</span><b>${e(s.brand)} ${e(s.model)}</b></div>
@@ -146,7 +146,7 @@
   document.querySelectorAll('.k-tile.kosong').forEach(a => a.onclick = ev => ev.preventDefault());
 
   // widget data: sepatu dengan rebound tertinggi
-  const top = [...sepatu].filter(s => s.angka?.reboundHeel != null).sort((a, b) => b.angka.reboundHeel - a.angka.reboundHeel)[0];
+  const top = [...sepatu].filter(s => s.lengkap !== false && s.angka?.reboundHeel != null).sort((a, b) => b.angka.reboundHeel - a.angka.reboundHeel)[0];
   if (top) {
     const st = SP.statistik(sepatu, 'reboundHeel');
     // posisi di antara semua sepatu yang dibedah (0 = terendah, 100 = tertinggi)
