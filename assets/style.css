@@ -884,3 +884,17 @@ html.anim .muncul .tick i,html.anim .tick.muncul i{transform:none}
 .beli-list a.beli-blibli{border-color:#0095da}
 .beli p{font-size:12px;opacity:.6;margin:10px 0 0}
 @media (max-width:520px){.beli-list a{flex:1 1 calc(50% - 8px)}}
+
+/* ===== HEADER: logo setinggi tombol, search bar transparan ===== */
+.nav .logo img{height:44px!important}
+.nav .cari-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px}
+.nav .cari-box input{color:#fff;background:transparent!important;border:0!important;box-shadow:none!important}
+.nav .cari-box input::placeholder{color:rgba(255,255,255,.55)}
+.nav .cari-box>button{background:rgba(255,193,49,.25);color:#fff;border-left:1px solid rgba(255,255,255,.12)}
+.nav .cari-box>button:hover{background:rgba(255,193,49,.45)}
+.nav .cari-box:focus-within{box-shadow:none;border-color:var(--kuning)}
+.nav .cari-box input:focus{outline:none}
+.ft-logo img{height:48px!important}
+#ft-sos a.sos,#m-sos a.sos{display:inline-flex;align-items:center;gap:10px}
+a.sos svg{flex:none;opacity:.9}
+a.sos:hover svg{color:var(--kuning);opacity:1}

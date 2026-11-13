@@ -385,8 +385,15 @@ SP.terapkan = function (f) {
   const $ = id => document.getElementById(id);
   Promise.all([SP.muatConfig(), SP.muatData()]).then(([c, { sepatu = [] }]) => {
     const k = c.kontak || {};
-    $('ft-sos').innerHTML = [['YouTube', k.youtube], ['TikTok', k.tiktok], ['Instagram', k.instagram], ['Femme Police', k.instagramSPW], ['NSP Project', k.instagramNSP]]
-      .filter(x => x[1]).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t} ↗</a>`).join('');
+    const IK = {
+      yt: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg>',
+      tt: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.4 6.2V8.7a8 8 0 0 0 4.7 1.5V6.8a4.7 4.7 0 0 1-4.7-4.8z"/></svg>',
+      ig: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>'
+    };
+    const handle = u => '@' + (u || '').replace(/\/+$/, '').split('/').pop().replace(/^@/, '');
+    $('ft-sos').innerHTML = [['yt', 'YouTube', 'Shoe Police', k.youtube], ['tt', 'TikTok', handle(k.tiktok), k.tiktok], ['ig', 'Instagram', handle(k.instagram), k.instagram],
+      ['ig', 'Instagram Femme Police', handle(k.instagramSPW), k.instagramSPW], ['ig', 'Instagram NSP Project', handle(k.instagramNSP), k.instagramNSP]]
+      .filter(x => x[3]).map(([i, j, t, u]) => `<a class="sos" href="${u}" target="_blank" rel="noopener" aria-label="${j}: ${t}">${IK[i]}<span>${t}</span></a>`).join('');
     $('m-sos').innerHTML = $('ft-sos').innerHTML;
 
     // ===== SEARCH + SARAN (dipakai di header & di panel kanan) =====
