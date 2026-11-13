@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kerja Sama — Shoe Police</title>
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="kontak">
+<main class="wrap isi-hal">
+  <h1>Kerja sama <span style="background:var(--kuning);padding:0 8px">bareng kami</span></h1>
+  <p class="lead">Mau sepatumu dibedah, tap-in konten, atau kolaborasi event? Isi form di bawah, tim Shoe Police akan menghubungi kamu. Catatan: hasil bedah tetap kami sampaikan apa adanya, termasuk untuk konten kolaborasi.</p>
+
+  <form class="form" id="form">
+    <div class="baris">
+      <div><label>Nama</label><input type="text" name="nama" autocomplete="name" required></div>
+      <div><label>Brand / Perusahaan</label><input type="text" name="brand" autocomplete="organization" required></div>
+    </div>
+    <div class="baris">
+      <div><label>Email</label><input type="email" name="email" autocomplete="email" required></div>
+      <div><label>WhatsApp</label><input type="tel" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="08xx"></div>
+    </div>
+    <div><label>Jenis kerja sama</label>
+      <select name="jenis">
+        <option>Bedah sepatu (review teknis)</option>
+        <option>Tap-in / konten kolaborasi</option>
+        <option>Media partner event</option>
+        <option>Lainnya</option>
+      </select></div>
+    <div><label>Pesan</label><textarea name="pesan" rows="5" required></textarea></div>
+    <button class="tombol" type="submit">Kirim</button>
+    <div class="pesan-ok" id="ok">Terima kasih! Pesan kamu sudah masuk, kami akan segera menghubungi.</div>
+  </form>
+  <p class="lead" style="margin-top:28px" id="alt"></p>
+</main>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+SP.muatConfig().then(c => {
+  const k = c.kontak || {};
+  document.getElementById('alt').innerHTML = 'Atau langsung hubungi: ' + [
+    k.email && `<a href="mailto:${k.email}">${k.email}</a>`,
+    k.whatsapp && `<a href="https://wa.me/${k.whatsapp.replace(/\D/g, '')}" target="_blank">WhatsApp</a>`,
+    k.instagram && `<a href="${k.instagram}" target="_blank">Instagram</a>`
+  ].filter(Boolean).join(' · ');
+
+  document.getElementById('form').onsubmit = async ev => {
+    ev.preventDefault();
+    const d = Object.fromEntries(new FormData(ev.target));
+    const btn = ev.target.querySelector('button'); btn.disabled = true; btn.textContent = 'Mengirim…';
+    if (c.apiUrl) {
+      try {
+        await fetch(c.apiUrl, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(d) });
+        ev.target.reset(); document.getElementById('ok').style.display = 'block';
+      } catch (e) { alert('Gagal mengirim, coba lewat email ya.'); }
+    } else {
+      // Belum ada Apps Script → buka email
+      const isi = `Nama: ${d.nama}\nBrand: ${d.brand}\nEmail: ${d.email}\nWA: ${d.whatsapp}\nJenis: ${d.jenis}\n\n${d.pesan}`;
+      location.href = `mailto:${k.email}?subject=${encodeURIComponent('Kerja sama: ' + d.brand)}&body=${encodeURIComponent(isi)}`;
+    }
+    btn.disabled = false; btn.textContent = 'Kirim';
+  };
+});
+</script>
+</body>
+</html>

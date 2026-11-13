@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Artikel — Shoe Police</title>
+<meta name="description" content="Artikel dan hasil lab terbaru dari Shoe Police seputar dunia sepatu.">
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="artikel">
+<main id="isi"><p class="kosong-info">Memuat…</p></main>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+(async () => {
+  const [artikel, { sepatu = [] }] = await Promise.all([SP.muatArtikel(), SP.muatData()]);
+  const el = document.getElementById('isi'), e = SP.esc;
+  const prm = new URLSearchParams(location.search), id = prm.get('id');
+
+  // ===== DAFTAR ARTIKEL =====
+  if (!id) {
+    const kats = [...new Set(artikel.map(a => a.kategori).filter(Boolean))];
+    let aktif = prm.get('kategori') || '';
+    el.innerHTML = `<section class="hero" style="padding:34px 0"><div class="wrap"><h1>Artikel</h1>
+      <p>Hasil lab, panduan, dan cerita seputar dunia sepatu dari tim Shoe Police.</p>
+      <div class="tab-kat" id="tab"></div></div></section>
+      <section class="wrap" style="padding:28px 0 80px"><div class="a-grid" id="grid"></div></section>`;
+    const render = () => {
+      document.getElementById('tab').innerHTML = ['', ...kats].map(k => `<button data-k="${e(k)}" class="${k === aktif ? 'aktif' : ''}">${e(k || 'Semua')}</button>`).join('');
+      const l = artikel.filter(a => !aktif || a.kategori === aktif);
+      document.getElementById('grid').innerHTML = l.length ? l.map((a, i) => SP.kartuArtikel(a, i === 0 && !aktif)).join('') : '<p class="kosong-info">Belum ada artikel.</p>';
+    };
+    document.getElementById('tab').onclick = ev => { const b = ev.target.closest('button'); if (b) { aktif = b.dataset.k; render(); } };
+    render();
+    return;
+  }
+
+  // ===== BACA ARTIKEL =====
+  const a = artikel.find(x => x.id === id);
+  if (!a) { el.innerHTML = '<p class="kosong-info">Artikel tidak ditemukan. <a href="artikel.html"><u>Lihat semua artikel</u></a></p>'; return; }
+  document.title = `${a.judul} — Shoe Police`;
+  const terkait = (a.sepatu || []).map(i => sepatu.find(s => s.id === i)).filter(Boolean);
+  const lain = artikel.filter(x => x.id !== a.id).slice(0, 3);
+  el.innerHTML = `
+    <article class="baca wrap">
+      <div class="remah"><a href="artikel.html">Artikel</a> › <a href="artikel.html?kategori=${encodeURIComponent(a.kategori || '')}">${e(a.kategori || 'Artikel')}</a></div>
+      <span class="a-kat">${e(a.kategori || 'Artikel')}</span>
+      <h1>${e(a.judul)}</h1>
+      <p class="baca-lead">${e(a.ringkasan || '')}</p>
+      <div class="baca-meta">${e(a.penulis || 'Tim Shoe Police')} · ${SP.tglIndo(a.tanggal)} · ${SP.menitBaca(a)} menit baca</div>
+      ${a.gambar ? `<figure class="baca-cover"><img src="${e(a.gambar)}" alt=""></figure>` : ''}
+      <div class="baca-isi">${SP.renderIsi(a.isi)}</div>
+      ${terkait.length ? `<div class="baca-sepatu"><h3>Sepatu di artikel ini</h3><div class="mirip">${terkait.map(s =>
+        `<a class="mini" href="sepatu.html?id=${encodeURIComponent(s.id)}">${SP.ring(s.skor, 48)}<div><b>${e(s.brand)} ${e(s.model)}</b><span>Lihat hasil lab ›</span></div></a>`).join('')}</div>
+        ${terkait.length > 1 ? `<a class="tombol gelap" style="margin-top:14px" href="bandingkan.html?ids=${terkait.map(s => s.id).join(',')}">Bandingkan ${terkait.length} sepatu ini</a>` : ''}</div>` : ''}
+    </article>
+    ${lain.length ? `<section class="wrap" style="padding:10px 0 80px"><div class="b-judul"><h2>Artikel lainnya</h2><a href="artikel.html">Semua artikel ›</a></div>
+      <div class="a-grid">${lain.map(x => SP.kartuArtikel(x)).join('')}</div></section>` : ''}`;
+})();
+</script>
+</body>
+</html>

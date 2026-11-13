@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hasil Bedah — Shoe Police</title>
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="database">
+<main class="wrap" id="isi"><p class="kosong-info">Memuat…</p></main>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+(async () => {
+  const id = new URLSearchParams(location.search).get('id');
+  const { sepatu = [] } = await SP.muatData();
+  const s = sepatu.find(x => x.id === id);
+  const el = document.getElementById('isi');
+  if (!s) { el.innerHTML = '<p class="kosong-info">Sepatu tidak ditemukan. <a href="database.html"><u>Kembali ke database</u></a></p>'; return; }
+  document.title = `${s.brand} ${s.model} — Hasil Bedah Shoe Police`;
+  const a = s.angka || {}, e = SP.esc, f = SP.fmt, t = SP.tier(s.skor);
+  const grup = SP.pembanding(sepatu, s);
+  const namaGrup = grup === sepatu ? 'semua sepatu' : 'sepatu ' + s.kategori.toLowerCase();
+  const { plus, minus } = SP.kelebihan(sepatu, s);
+
+  // ----- baris uji lab dengan skala vs rata-rata -----
+  // metrik yang punya data pembanding → baris dengan skala; sisanya → grid angka ringkas
+  const adaBanding = m => { const st = SP.statistik(grup, m.k); return st && st.n >= 2 && st.max > st.min; };
+  const metrikAda = SP.METRIK.filter(m => typeof a[m.k] === 'number');
+  const barisUji = metrikAda.filter(adaBanding).map(m => {
+    const stt = SP.statistik(grup, m.k), x = a[m.k];
+    const pos = v => ((v - stt.min) / (stt.max - stt.min)) * 100;
+    const p = SP.persentil(stt, x, m.arah || 1);
+    const ket = m.arah === 0
+      ? `${x > stt.avg ? 'Di atas' : 'Di bawah'} rata-rata ${namaGrup} (<b>${f(stt.avg)} ${m.sat}</b>)`
+      : `${p >= 50 ? (m.arah === -1 ? 'Lebih ringan' : 'Lebih tinggi') : (m.arah === -1 ? 'Lebih berat' : 'Lebih rendah')} dari <b>${p >= 50 ? p : 100 - p}%</b> ${namaGrup} · rata-rata ${f(stt.avg)} ${m.sat}`;
+    return `<div class="uji"><div><div class="lbl">${m.lbl}<small>${m.desc}</small></div><div class="nilai">${f(x)}<i>${m.sat}</i></div></div><div>
+      ${SP.tick(Math.max(3, pos(x)), pos(stt.avg), 40)}
+      <div class="skala-lbl"><span>${f(stt.min)} ${m.sat}</span><span>▮ rata-rata ${f(stt.avg)} ${m.sat}</span><span>${f(stt.max)} ${m.sat}</span></div>
+      <div class="skala-ket">${ket}</div></div></div>`;
+  }).join('') + (metrikAda.some(m => !adaBanding(m)) ? `<div class="angka-grid">${metrikAda.filter(m => !adaBanding(m)).map(m =>
+    `<div><span>${m.lbl}</span><b>${f(a[m.k])}<i>${m.sat}</i></b></div>`).join('')}</div>` : '');
+
+  const fakta = [['Kategori', s.kategori + (s.subtipe ? ' · ' + s.subtipe : '')], ['Harga retail', s.harga], ['Size yang dites', s.size && 'EU ' + s.size],
+    ['Tester', s.tester], ['Tanggal tes', s.tanggal], ['Midsole', a.materialMidsole], ['Outsole', a.outsoleMaterial],
+    ['Grip kering / basah', (a.gripKering || a.gripBasah) && `${a.gripKering || '–'} / ${a.gripBasah || '–'}`], ['Sizing', a.sizing]]
+    .filter(x => x[1]).map(([k, v]) => `<tr><td>${k}</td><td>${e(v)}</td></tr>`).join('');
+
+  const layer = (s.layer || []).map(l => `<div class="k">${SP.ring(l.skor, 70)}<b>${e(l.nama)}</b><span>${e(l.kelas)} · bobot ${e(l.bobot)}</span></div>`).join('');
+  const mirip = grup.filter(x => x.id !== s.id).sort((x, y) => Math.abs((x.skor ?? 0) - (s.skor ?? 0)) - Math.abs((y.skor ?? 0) - (s.skor ?? 0))).slice(0, 4)
+    .map(x => `<a class="mini" href="sepatu.html?id=${encodeURIComponent(x.id)}">${SP.ring(x.skor, 48)}<div><b>${e(x.brand)} ${e(x.model)}</b><span>${e(x.subtipe || x.kategori)}</span></div></a>`).join('');
+  const yt = SP.ytId(s.video);
+
+  const bagian = [
+    ['ringkasan', 'Ringkasan', plus.length || minus.length],
+    ['skor', 'Skor per layer', layer],
+    ['lab', 'Hasil tes lab', barisUji],
+    ['klaim', 'Klaim brand', s.klaim || s.masalah],
+    ['video', 'Video bedah', yt],
+    ['mirip', 'Sepatu sejenis', mirip]
+  ].filter(x => x[2]);
+
+  el.innerHTML = `
+  <div class="remah"><a href="database.html">Database</a> › <a href="database.html?kategori=${encodeURIComponent(s.kategori)}">${e(s.kategori)}</a> › ${e(s.brand)} ${e(s.model)}</div>
+  <section class="d-hero">
+    <div class="d-foto">${SP.foto(s)}</div>
+    <div class="d-info">
+      <div class="brand">${e(s.brand)}</div>
+      <h1>${e(s.model)}</h1>
+      <div class="d-skor">${SP.ring(s.skor, 96, 'Skor')}
+        <div class="ket"><b style="color:${t.w}">${e(s.verdict || t.t)}</b>
+        <span>Skor akhir dari ${s.layer?.length || 4} layer: material, konstruksi, fungsi & kenyamanan.</span></div></div>
+      <table class="fakta">${fakta}</table>
+      <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
+        <button class="tombol gelap" id="tbanding">+ Bandingkan</button>
+        ${yt ? `<a class="tombol garis" href="#video">▶ Tonton bedahnya</a>` : ''}
+      </div>
+    </div>
+  </section>
+
+  <div class="d-badan">
+    <nav class="toc"><h4>Di halaman ini</h4>${bagian.map(([i, j]) => `<a href="#${i}">${j}</a>`).join('')}</nav>
+    <div>
+      ${plus.length || minus.length ? `<section class="panel" id="ringkasan"><h2>Ringkasan</h2><p class="ket-h">Dihitung otomatis dari hasil lab, dibandingkan dengan ${grup.length} ${namaGrup} yang sudah kami bedah.</p>
+        <div class="pk"><div class="plus"><h3>Kelebihan</h3><ul>${plus.map(x => `<li>${e(x)}</li>`).join('') || '<li>–</li>'}</ul></div>
+        <div class="minus"><h3>Kekurangan</h3><ul>${minus.map(x => `<li>${e(x)}</li>`).join('') || '<li>–</li>'}</ul></div></div></section>` : ''}
+
+      ${layer ? `<section class="panel" id="skor"><h2>Skor per layer</h2><p class="ket-h">Bobot tiap layer menyesuaikan tipe sepatu.</p><div class="lyr">${layer}</div></section>` : ''}
+
+      ${barisUji ? `<section class="panel" id="lab"><h2>Hasil tes lab</h2><p class="ket-h">Garis kuning = posisi sepatu ini di antara ${namaGrup} yang sudah kami bedah · garis hitam = rata-rata.</p>${barisUji}</section>` : ''}
+
+      ${s.klaim || s.masalah ? `<section class="panel" id="klaim"><h2>Klaim brand vs hasil</h2><p class="ket-h">Apa kata brand, dan apa yang kami temukan.</p><div class="klaim">
+        ${s.klaim ? `<p><b>Klaim brand:</b> ${e(s.klaim)}</p>` : ''}
+        ${s.masalah ? `<p><b>Temuan kami:</b> ${e(s.masalah)}</p>` : ''}
+        ${s.klaimHasil ? `<span class="stempel">${e(s.klaimHasil)}</span>` : ''}</div></section>` : ''}
+
+      ${yt ? `<section class="panel" id="video"><h2>Video bedah</h2><p class="ket-h">Proses pengujian lengkap di YouTube Shoe Police.</p><iframe class="video" src="https://www.youtube-nocookie.com/embed/${yt}" allowfullscreen loading="lazy"></iframe></section>` : ''}
+
+      ${mirip ? `<section class="panel" id="mirip"><h2>Sepatu sejenis</h2><p class="ket-h">Skor paling dekat di kategori yang sama.</p><div class="mirip">${mirip}</div></section>` : ''}
+    </div>
+  </div>`;
+
+  // tombol bandingkan
+  const tb = document.getElementById('tbanding');
+  const sync = () => { const ada = SP.ambilBanding().includes(s.id); tb.textContent = ada ? '✓ Masuk daftar banding' : '+ Bandingkan'; };
+  tb.onclick = () => {
+    let b = SP.ambilBanding();
+    if (b.includes(s.id)) b = b.filter(x => x !== s.id); else b.push(s.id);
+    SP.simpanBanding(b); sync();
+    if (SP.ambilBanding().length >= 2 && confirm('Buka halaman bandingkan sekarang?')) location.href = 'bandingkan.html';
+  };
+  sync();
+
+  // highlight daftar isi saat scroll
+  const links = [...document.querySelectorAll('.toc a')];
+  const obs = new IntersectionObserver(en => en.forEach(x => { if (x.isIntersecting) links.forEach(l => l.classList.toggle('aktif', l.hash === '#' + x.target.id)); }), { rootMargin: '-40% 0px -55% 0px' });
+  document.querySelectorAll('.panel').forEach(p => obs.observe(p));
+})();
+</script>
+</body>
+</html>

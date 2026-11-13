@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shoe Police — Lab Bedah Sepatu</title>
+<meta name="description" content="Shoe Police membedah sepatu di lab: berat, rebound midsole, kekerasan foam, ketahanan upper & outsole. Cari hasil bedah per kategori.">
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="beranda">
+<main>
+  <!-- ===== HERO (gelap, imersif) ===== -->
+  <section class="wrap">
+    <div class="m-hero" id="hero">
+      <div class="m-hero-media" id="h-media"></div>
+      <div class="m-hero-isi">
+        <span class="eyebrow terang" data-reveal>Lab bedah sepatu · Bandung</span>
+        <h1 class="judul-kata" id="h-judul">Sepatu dibedah, bukan cuma direview</h1>
+        <p id="h-sub" data-reveal></p>
+        <div class="m-aksi" data-reveal>
+          <a class="pil kuning" href="database.html">Lihat database <span class="panah-ne">↗</span></a>
+          <a class="pil garis-terang" href="metode.html">Cara kami menguji <span class="panah-ne">↗</span></a>
+        </div>
+      </div>
+      <div class="m-stat" data-reveal>
+        <div><b data-hitung id="st-sepatu">0</b><span>sepatu dibedah</span></div>
+        <div><b data-hitung id="st-brand">0</b><span>brand</span></div>
+        <div><b data-hitung id="st-kat">0</b><span>kategori</span></div>
+        <div><b><span data-hitung data-nilai="10">0</span>+</b><span>tes per sepatu</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE BRAND ===== -->
+  <section class="marquee" aria-label="Brand yang sudah kami bedah"><div class="marquee-jalur" id="marquee"></div></section>
+
+  <!-- ===== BARU DIBEDAH (geser samping) ===== -->
+  <section class="wrap seksi">
+    <div class="seksi-kepala">
+      <div><span class="eyebrow" data-reveal>Baru dibedah</span><h2 class="judul-kata">Hasil lab terbaru</h2></div>
+      <div class="geser-nav"><button class="bulat" data-geser="-1" aria-label="Sebelumnya">←</button><button class="bulat" data-geser="1" aria-label="Berikutnya">→</button>
+        <a class="pil kecil" href="database.html?kat=baru">Semua <span class="panah-ne">↗</span></a></div>
+    </div>
+    <div class="geser" id="baru"></div>
+  </section>
+
+  <!-- ===== KATEGORI ===== -->
+  <section class="wrap seksi">
+    <div class="panel-putih">
+      <div class="seksi-kepala">
+        <div><span class="eyebrow" data-reveal>Kategori</span><h2 class="judul-kata">Cari sesuai kebutuhanmu</h2></div>
+        <a class="pil kecil" href="database.html">Semua sepatu <span class="panah-ne">↗</span></a>
+      </div>
+      <div class="k-grid" id="kategori"></div>
+    </div>
+  </section>
+
+  <!-- ===== ANGKA, BUKAN OPINI (widget data ala tracker) ===== -->
+  <section class="wrap seksi">
+    <div class="m-data">
+      <div class="m-data-teks">
+        <span class="eyebrow terang" data-reveal>Metode</span>
+        <h2 class="judul-kata">Angka, bukan opini</h2>
+        <p data-reveal>Setiap sepatu melewati 10+ tes yang sama: timbang, dropball, dremel upper & outsole, durometer, sizing, traction, sampai wear test. Hasilnya bisa dibandingkan antar sepatu.</p>
+        <a class="pil kuning" href="metode.html" data-reveal>Lihat metode tes <span class="panah-ne">↗</span></a>
+      </div>
+      <div class="m-widget" id="widget" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- ===== ARTIKEL ===== -->
+  <section class="wrap seksi">
+    <div class="seksi-kepala">
+      <div><span class="eyebrow" data-reveal>Artikel</span><h2 class="judul-kata">Bacaan terkini</h2></div>
+      <a class="pil kecil" href="artikel.html">Semua artikel <span class="panah-ne">↗</span></a>
+    </div>
+    <div class="a-grid" id="artikel"></div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="wrap seksi">
+    <div class="faq">
+      <div>
+        <span class="eyebrow" data-reveal>Pertanyaan</span>
+        <h2 class="judul-kata">Yang sering ditanyakan</h2>
+        <p class="lead" data-reveal>Belum ketemu jawabannya? Hubungi kami langsung.</p>
+        <a class="pil gelap" href="kontak.html" data-reveal>Hubungi kami <span class="panah-ne">↗</span></a>
+      </div>
+      <div class="faq-daftar" id="faq"></div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="wrap seksi">
+    <div class="m-cta" data-reveal>
+      <h2 class="judul-kata">Punya sepatu yang mau dibedah?</h2>
+      <p>Bedah sepatu, konten kolaborasi, atau media partner event. Hasil bedah tetap kami sampaikan apa adanya.</p>
+      <a class="pil kuning" href="kontak.html">Ajukan kerja sama <span class="panah-ne">↗</span></a>
+    </div>
+  </section>
+</main>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+(async () => {
+  const [cfg, { sepatu = [] }] = await Promise.all([SP.muatConfig(), SP.muatData()]);
+  const $ = id => document.getElementById(id), e = SP.esc;
+  const h = cfg.hero || {};
+
+  // hero
+  if (h.judul) $('h-judul').textContent = h.judul;
+  $('h-sub').textContent = h.sub || '';
+  if (h.video) $('h-media').innerHTML = `<video src="${e(h.video)}" autoplay muted loop playsinline></video>`;
+  else if (h.gambar) $('h-media').innerHTML = `<img src="${e(h.gambar)}" alt="">`;
+  else $('h-media').innerHTML = `<img class="logo-latar" src="assets/logo/logo-shoepolice-besar.png" alt="">`;
+  const kats = (cfg.kategoriBeranda || []).map(k => ({ ...k, isi: SP.isiKategori(sepatu, k) }));
+  $('st-sepatu').dataset.nilai = sepatu.length;
+  $('st-brand').dataset.nilai = new Set(sepatu.map(s => s.brand)).size;
+  $('st-kat').dataset.nilai = kats.filter(k => k.isi.length && !k.otomatis).length;
+
+  // marquee nama brand
+  const brands = [...new Set(sepatu.map(s => s.brand))];
+  const isiM = brands.map(b => `<span>${e(b)}</span><i>✱</i>`).join('');
+  $('marquee').innerHTML = isiM + isiM + isiM + isiM;
+
+  // baru dibedah
+  $('baru').innerHTML = SP.terbaru(sepatu).slice(0, 10).map(s => `
+    <a class="g-kartu" href="sepatu.html?id=${encodeURIComponent(s.id)}">
+      <div class="g-foto">${SP.foto(s)}<span class="g-skor">${SP.ring(s.skor, 56)}</span></div>
+      <div class="g-teks"><span>${e(s.kategori)}${s.subtipe ? ' · ' + e(s.subtipe) : ''}</span><b>${e(s.brand)} ${e(s.model)}</b></div>
+    </a>`).join('') || '<p class="kosong-info">Belum ada data.</p>';
+  document.querySelectorAll('[data-geser]').forEach(b => b.onclick = () => {
+    const g = $('baru'); g.scrollBy({ left: +b.dataset.geser * g.clientWidth * .8, behavior: 'smooth' }); });
+
+  // kategori
+  kats.sort((x, y) => (y.isi.length > 0) - (x.isi.length > 0));
+  $('kategori').innerHTML = kats.map(k => {
+    const kosong = !k.isi.length;
+    return `<a class="k-tile ${kosong ? 'kosong' : ''}" href="${kosong ? '#' : 'database.html?kat=' + encodeURIComponent(k.id)}">
+      <span class="k-ikon">${k.gambar ? `<img src="${e(k.gambar)}" alt="">` : SP.ikon(k.ikon)}</span>
+      <span class="k-teks"><b>${e(k.nama)}</b><small>${kosong ? 'Segera hadir' : k.isi.length + ' sepatu'}</small></span>
+      <span class="k-panah">↗</span></a>`;
+  }).join('');
+  document.querySelectorAll('.k-tile.kosong').forEach(a => a.onclick = ev => ev.preventDefault());
+
+  // widget data: sepatu dengan rebound tertinggi
+  const top = [...sepatu].filter(s => s.angka?.reboundHeel != null).sort((a, b) => b.angka.reboundHeel - a.angka.reboundHeel)[0];
+  if (top) {
+    const st = SP.statistik(sepatu, 'reboundHeel');
+    // posisi di antara semua sepatu yang dibedah (0 = terendah, 100 = tertinggi)
+    const posisi = (k, balik) => { const t = SP.statistik(sepatu, k); if (!t || t.max === t.min) return 50; const p = (top.angka[k] - t.min) / (t.max - t.min) * 100; return Math.max(4, balik ? 100 - p : p); };
+    const w = (t, nilai, sat, persen, ket) => `<div class="w-baris"><div class="w-atas"><span>${t}</span><b><span data-hitung data-nilai="${nilai}" data-desimal="1">0</span>${sat}</b></div>${SP.tick(persen)}<small>${ket}</small></div>`;
+    $('widget').innerHTML = `<div class="w-kepala"><span class="titik"></span>Hasil lab · <a href="sepatu.html?id=${encodeURIComponent(top.id)}">${e(top.brand)} ${e(top.model)}</a></div>
+      ${w('Rebound heel', top.angka.reboundHeel, '%', posisi('reboundHeel'), `Tertinggi dari ${st.n} sepatu · rata-rata ${SP.fmt(st.avg)}%`)}
+      ${top.angka.reboundToe != null ? w('Rebound forefoot', top.angka.reboundToe, '%', posisi('reboundToe'), 'Bola dijatuhkan dari 100 cm, rata-rata 5x') : ''}
+      ${top.angka.berat != null ? w('Berat (1 pcs)', top.angka.berat, ' g', posisi('berat', true), 'Makin penuh = makin ringan dibanding sepatu lain') : ''}
+      <div class="w-skor">${SP.ring(top.skor, 64)}<div><b>Skor akhir</b><small>dari 4 layer penilaian</small></div></div>`;
+  }
+
+  // artikel
+  SP.muatArtikel().then(a => { $('artikel').innerHTML = a.slice(0, 3).map(x => SP.kartuArtikel(x)).join('') || '<p class="kosong-info">Belum ada artikel.</p>'; SP.animasi(); });
+
+  // FAQ
+  const faq = cfg.faq || [];
+  $('faq').innerHTML = faq.map((f, i) => `<details class="faq-item" ${i === 0 ? 'open' : ''}><summary>${e(f.t)}<span class="faq-ikon"></span></summary><p>${e(f.j)}</p></details>`).join('');
+
+  SP.animasi();
+})();
+</script>
+</body>
+</html>

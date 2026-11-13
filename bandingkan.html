@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bandingkan Sepatu — Shoe Police</title>
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="banding">
+<main class="wrap isi-hal">
+  <h1>Bandingkan sepatu</h1>
+  <p class="lead">Hasil lab berdampingan. Tanda ★ = angka terbaik di baris itu.</p>
+  <div style="display:flex;gap:10px;margin:22px 0;flex-wrap:wrap;max-width:720px">
+    <select id="tambah" style="flex:1;min-width:220px"><option value="">+ Tambah sepatu…</option></select>
+    <button class="tombol garis" id="kosongkan">Kosongkan</button>
+  </div>
+  <div class="gulir" id="tabel"></div>
+</main>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+(async () => {
+  const { sepatu = [] } = await SP.muatData();
+  const $ = id => document.getElementById(id), e = SP.esc, f = SP.fmt;
+  const url = new URLSearchParams(location.search).get('ids');
+  if (url) SP.simpanBanding(url.split(','));
+
+  $('tambah').innerHTML += [...sepatu].sort((a, b) => `${a.brand} ${a.model}`.localeCompare(`${b.brand} ${b.model}`))
+    .map(s => `<option value="${e(s.id)}">${e(s.brand)} ${e(s.model)} (${e(s.kategori)})</option>`).join('');
+  $('tambah').onchange = ev => { const b = SP.ambilBanding(); if (ev.target.value && !b.includes(ev.target.value)) { if (b.length >= 4) alert('Maksimal 4 sepatu.'); else SP.simpanBanding([...b, ev.target.value]); } ev.target.value = ''; render(); };
+  $('kosongkan').onclick = () => { SP.simpanBanding([]); render(); };
+
+  function render() {
+    const list = SP.ambilBanding().map(id => sepatu.find(s => s.id === id)).filter(Boolean);
+    history.replaceState(null, '', list.length ? '?ids=' + list.map(s => s.id).join(',') : location.pathname);
+    if (!list.length) { $('tabel').innerHTML = '<p class="kosong-info">Belum ada sepatu. Tambah dari menu di atas, atau centang "Bandingkan" di halaman database.</p>'; return; }
+
+    const baris = (lbl, nilai, arah = 0, sat = '') => {
+      const v = list.map(nilai);
+      if (v.every(x => x == null || x === '')) return '';
+      const angka = v.filter(x => typeof x === 'number');
+      const best = arah && angka.length > 1 ? (arah > 0 ? Math.max(...angka) : Math.min(...angka)) : null;
+      return `<tr><td>${lbl}</td>${v.map(x => `<td class="${best !== null && x === best ? 'terbaik' : ''}">${x == null || x === '' ? '–' : (typeof x === 'number' ? f(x) + (sat ? ' ' + sat : '') : e(x))}</td>`).join('')}</tr>`;
+    };
+    const semuaLayer = [...new Set(list.flatMap(s => (s.layer || []).map(l => l.nama)))];
+
+    $('tabel').innerHTML = `<table class="tabel-banding">
+      <thead><tr><th></th>${list.map(s => `<th>
+        <div style="background:var(--abu);border-radius:10px;aspect-ratio:4/3;max-width:220px;margin:0 auto 10px;display:grid;place-items:center">${SP.foto(s)}</div>
+        <a href="sepatu.html?id=${encodeURIComponent(s.id)}" style="font-family:var(--judul);text-transform:uppercase;font-size:1.2rem;line-height:1.05;display:block">${e(s.brand)}<br>${e(s.model)}</a>
+        <div style="display:flex;justify-content:center;margin:10px 0">${SP.ring(s.skor, 70)}</div>
+        <button class="tombol garis" style="padding:5px 10px;font-size:.78rem" data-hapus="${e(s.id)}">Hapus</button></th>`).join('')}</tr></thead>
+      <tbody>
+        ${baris('Skor akhir', s => s.skor, 1)}
+        ${baris('Kategori', s => s.kategori + (s.subtipe ? ' · ' + s.subtipe : ''))}
+        ${baris('Harga', s => s.harga)}
+        ${semuaLayer.map(n => baris('Layer ' + n.toLowerCase(), s => (s.layer || []).find(l => l.nama === n)?.skor, 1)).join('')}
+        ${SP.METRIK.map(m => baris(m.lbl, s => s.angka?.[m.k], m.arah, m.sat)).join('')}
+        ${baris('Grip kering', s => s.angka?.gripKering)}
+        ${baris('Grip basah', s => s.angka?.gripBasah)}
+        ${baris('Sizing', s => s.angka?.sizing)}
+      </tbody></table>`;
+    $('tabel').querySelectorAll('[data-hapus]').forEach(b => b.onclick = () => { SP.simpanBanding(SP.ambilBanding().filter(x => x !== b.dataset.hapus)); render(); });
+  }
+  render();
+})();
+</script>
+</body>
+</html>

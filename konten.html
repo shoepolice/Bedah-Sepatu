@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Konten — Shoe Police</title>
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="konten">
+<main class="wrap isi-hal">
+  <h1>Konten <span style="background:var(--kuning);padding:0 8px">terbaru</span></h1>
+  <p class="lead">Video bedah, investigasi, dan carousel dari YouTube dan Instagram Shoe Police.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px" id="tombol-sos"></div>
+
+  <h2 class="sek">YouTube</h2>
+  <div class="embed-grid" id="yt"></div>
+
+  <h2 class="sek">Instagram</h2>
+  <div class="embed-grid" id="ig"></div>
+</main>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+SP.muatConfig().then(c => {
+  const k = c.kontak || {};
+  document.getElementById('tombol-sos').innerHTML =
+    [['YouTube', k.youtube], ['Instagram', k.instagram], ['Shoe Police Woman', k.instagramSPW], ['TikTok', k.tiktok]]
+      .filter(x => x[1]).map(([t, u]) => `<a class="tombol garis" href="${u}" target="_blank" rel="noopener">${t}</a>`).join('');
+
+  const yt = (c.videoYoutube || []).map(SP.ytId).filter(Boolean);
+  document.getElementById('yt').innerHTML = yt.length
+    ? yt.map(id => `<iframe class="video" src="https://www.youtube-nocookie.com/embed/${id}" loading="lazy" allowfullscreen></iframe>`).join('')
+    : '<p class="lead">Belum ada video. Tambahkan link di data/config.json → "videoYoutube".</p>';
+
+  const ig = c.postInstagram || [];
+  document.getElementById('ig').innerHTML = ig.length
+    ? ig.map(u => `<blockquote class="instagram-media" data-instgrm-permalink="${SP.esc(u)}" data-instgrm-version="14" style="background:#fff;border-radius:12px;margin:0;width:100%"></blockquote>`).join('')
+    : '<p class="lead">Belum ada post. Tambahkan link di data/config.json → "postInstagram".</p>';
+  if (ig.length) { const s = document.createElement('script'); s.src = 'https://www.instagram.com/embed.js'; s.async = true; document.body.append(s); }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Database Bedah Sepatu — Shoe Police</title>
+<meta name="description" content="Database sepatu yang sudah dibedah di lab Shoe Police: berat, rebound midsole, kekerasan foam, ketahanan upper & outsole, dan skor akhir.">
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20">
+</head>
+<body data-hal="database">
+<main>
+  <section class="hero" style="padding:30px 0 32px">
+    <div class="wrap">
+      <h1 id="judul">Database bedah sepatu</h1>
+      <p id="sub">Semua sepatu yang sudah melewati lab Shoe Police. Pakai kolom cari atau tombol Filter di atas.</p>
+    </div>
+  </section>
+
+  <section class="wrap db-satu">
+    <div class="hasil-atas">
+      <div class="hasil-jml" id="jml" style="margin:0;flex:1"></div>
+      <button class="tombol garis" onclick="SP.bukaFilter && SP.bukaFilter()">Filter</button>
+      <select id="urut" style="width:auto">
+        <option value="">Skor tertinggi</option>
+        <option value="baru">Terbaru dibedah</option>
+        <option value="ringan">Paling ringan</option>
+        <option value="rebound">Rebound tertinggi</option>
+        <option value="skor-asc">Skor terendah</option>
+        <option value="az">Nama A–Z</option>
+      </select>
+    </div>
+    <div class="aktif-baris" id="aktif"></div>
+    <div class="list" id="list"><p class="kosong-info">Memuat data bedah…</p></div>
+  </section>
+</main>
+
+<div class="bandingbar" id="bbar"><div class="wrap">
+  <b style="font-family:var(--judul);font-size:1.2rem;text-transform:uppercase">Bandingkan</b>
+  <div class="chips" id="bchips"></div>
+  <a class="tombol" id="bgo" href="bandingkan.html">Bandingkan sekarang</a>
+</div></div>
+
+<script src="assets/app.js?v=20"></script>
+<script>
+(async () => {
+  const [cfg, { sepatu = [] }] = await Promise.all([SP.muatConfig(), SP.muatData()]);
+  const $ = id => document.getElementById(id), e = SP.esc;
+
+  $('urut').onchange = () => SP.terapkan({ ...SP.bacaFilter(), urut: $('urut').value });
+  window.addEventListener('sp-filter', render);
+
+  function render() {
+    const f = SP.bacaFilter();
+    const kat = (cfg.kategoriBeranda || []).find(k => k.id === f.kat);
+    $('judul').textContent = f.q ? `Hasil pencarian "${f.q}"` : kat ? kat.nama : 'Database bedah sepatu';
+    $('sub').textContent = f.q ? 'Dicari dari nama sepatu, brand, kategori, tipe, dan tag.' : kat?.deskripsi || 'Semua sepatu yang sudah melewati lab Shoe Police. Pakai kolom cari atau tombol Filter di atas.';
+    const ci = document.getElementById('cari-global'); if (ci && document.activeElement !== ci) ci.value = f.q;
+
+    const urut = f.urut || (kat?.otomatis === 'terbaru' ? 'baru' : '');
+    $('urut').value = urut;
+    const n = v => v ?? -Infinity;
+    const list = SP.saring(sepatu, f).sort({
+      '': (x, y) => n(y.skor) - n(x.skor),
+      'baru': (x, y) => SP.tglNilai(y.tanggal) - SP.tglNilai(x.tanggal) || y._urut - x._urut,
+      'skor-asc': (x, y) => (x.skor ?? 99) - (y.skor ?? 99),
+      'ringan': (x, y) => (x.angka?.berat ?? 1e9) - (y.angka?.berat ?? 1e9),
+      'rebound': (x, y) => n(y.angka?.reboundHeel) - n(x.angka?.reboundHeel),
+      'az': (x, y) => `${x.brand} ${x.model}`.localeCompare(`${y.brand} ${y.model}`)
+    }[urut] || (() => 0));
+
+    // chip filter aktif (bisa dihapus satu-satu)
+    const chip = [];
+    if (f.q) chip.push(['q', `Kata kunci: ${f.q}`, { q: '' }]);
+    if (kat) chip.push(['kat', kat.nama, { kat: '' }]);
+    f.brand.forEach(b => chip.push(['b', b, { brand: f.brand.filter(x => x !== b) }]));
+    f.sub.forEach(b => chip.push(['s', b, { sub: f.sub.filter(x => x !== b) }]));
+    if (f.skor) chip.push(['skor', `Skor ≥ ${SP.fmt(f.skor)}`, { skor: 0 }]);
+    if (f.berat) chip.push(['berat', `Berat ≤ ${f.berat} g`, { berat: 0 }]);
+    $('aktif').innerHTML = chip.map(([t, l], i) => `<span class="chip-f ${t === 'kat' ? 'kuning' : ''}">${e(l)}<button data-i="${i}" aria-label="Hapus">✕</button></span>`).join('')
+      + (chip.length > 1 ? `<a class="hapus-semua" href="database.html">Hapus semua</a>` : '');
+    $('aktif').querySelectorAll('button').forEach(b => b.onclick = () => SP.terapkan({ ...f, ...chip[b.dataset.i][2] }));
+
+    $('jml').innerHTML = `Menampilkan <b>${list.length}</b> dari ${sepatu.length} sepatu`;
+    $('list').innerHTML = list.length ? list.map(kartu).join('')
+      : `<p class="kosong-info">Belum ada sepatu yang cocok.${chip.length ? ' Coba hapus beberapa filter.' : ''}</p>`;
+    barBanding();
+  }
+
+  function kartu(s) {
+    const a = s.angka || {}, dipilih = SP.ambilBanding().includes(s.id);
+    const sp = [['Berat', a.berat, 'g'], ['Rebound', a.reboundHeel, '%'], ['Drop', a.drop, 'mm'], ['Midsole', a.midsoleHeel, 'HA']]
+      .filter(x => x[1] != null).map(([l, v, u]) => `<div>${l}<b>${SP.fmt(v)} ${u}</b></div>`).join('');
+    return `<div class="kartu">
+      <a href="sepatu.html?id=${encodeURIComponent(s.id)}" class="foto">${SP.foto(s)}</a>
+      <a href="sepatu.html?id=${encodeURIComponent(s.id)}">
+        <div class="nama">${e(s.brand)} ${e(s.model)}</div>
+        <div class="sub">${e(s.kategori)}${s.subtipe ? ' · ' + e(s.subtipe) : ''}${s.harga ? ' · ' + e(s.harga) : ''}</div>
+        <div class="spek">${sp}</div>
+      </a>
+      <div class="kanan">
+        <div style="text-align:center">${SP.ring(s.skor, 74)}<div class="tier" style="color:${SP.tier(s.skor).w};margin-top:4px">${SP.tier(s.skor).t}</div></div>
+        <label class="banding-cek"><input type="checkbox" data-id="${e(s.id)}" ${dipilih ? 'checked' : ''}> Bandingkan</label>
+      </div></div>`;
+  }
+
+  $('list').onchange = ev => {
+    const id = ev.target.dataset.id; if (!id) return;
+    let b = SP.ambilBanding().filter(x => x !== id);
+    if (ev.target.checked) { if (b.length >= 4) { ev.target.checked = false; alert('Maksimal 4 sepatu.'); return; } b.push(id); }
+    SP.simpanBanding(b); barBanding();
+  };
+  function barBanding() {
+    const b = SP.ambilBanding().filter(id => sepatu.some(s => s.id === id));
+    $('bbar').classList.toggle('muncul', b.length > 0);
+    $('bchips').innerHTML = b.map(id => { const s = sepatu.find(x => x.id === id);
+      return `<span class="chip">${e(s.brand + ' ' + s.model)}<button data-hapus="${e(id)}">✕</button></span>`; }).join('');
+    $('bgo').toggleAttribute('disabled', b.length < 2);
+    $('bgo').textContent = b.length < 2 ? 'Pilih min. 2 sepatu' : `Bandingkan ${b.length} sepatu`;
+  }
+  $('bchips').onclick = ev => { const id = ev.target.dataset.hapus; if (id) { SP.simpanBanding(SP.ambilBanding().filter(x => x !== id)); render(); } };
+
+  render();
+})();
+</script>
+</body>
+</html>

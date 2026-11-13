@@ -1,0 +1,82 @@
+{
+  "_catatan": "Tambah artikel = copy satu blok {...} paling atas, ganti isinya. Artikel diurutkan dari tanggal terbaru (format YYYY-MM-DD). Di 'isi', satu baris = satu paragraf. Awali '## ' untuk subjudul, '- ' untuk poin, '> ' untuk kutipan/catatan, dan '![keterangan](link gambar)' untuk gambar. 'sepatu' = id sepatu di database yang mau ditautkan (boleh kosong).",
+  "artikel": [
+    {
+      "id": "running-paling-membal-versi-lab",
+      "judul": "4 Sepatu Running yang Sudah Kami Bedah: Mana yang Paling Membal?",
+      "tanggal": "2026-11-13",
+      "kategori": "Hasil Lab",
+      "penulis": "Tim Shoe Police",
+      "gambar": "",
+      "ringkasan": "Adidas Hyperboost Run, Puma Deviate Pure, ASICS Novablast 6, dan Nike Vomero 18 kami uji dengan dropball yang sama. Ini hasilnya.",
+      "sepatu": ["running-adidas-hyperboost-run", "running-puma-deviate-pure", "running-asics-novablast-6", "running-nike-vomero-18"],
+      "isi": [
+        "Klaim \"responsif\" dan \"energy return\" hampir selalu ada di setiap sepatu running. Masalahnya, klaim itu sulit dibandingkan karena tiap brand pakai istilah sendiri. Jadi kami ukur dengan satu cara yang sama untuk semua sepatu: dropball test.",
+        "## Cara ujinya",
+        "Bola yang sama dijatuhkan dari ketinggian 100 cm ke area tumit (heel) dan depan (forefoot), masing-masing 5 kali. Pantulan pertama direkam slow-motion, lalu kami ambil rata-ratanya. Makin tinggi bola memantul, makin banyak energi yang dikembalikan midsole.",
+        "## Hasil di tumit (heel)",
+        "- Adidas Hyperboost Run: 56,0%",
+        "- Puma Deviate Pure: 49,8%",
+        "- ASICS Novablast 6: 43,8%",
+        "- Nike Vomero 18: 43,0%",
+        "## Hasil di depan (forefoot)",
+        "- Puma Deviate Pure: 54,8%",
+        "- Adidas Hyperboost Run: 52,2%",
+        "- ASICS Novablast 6: 49,6%",
+        "- Nike Vomero 18: 44,2%",
+        "Hyperboost Run paling membal di tumit, sedangkan Deviate Pure unggul di forefoot. Novablast 6 dan Vomero 18 ada di bawahnya, dengan Vomero yang paling kalem di kedua titik.",
+        "## Apakah makin membal berarti makin bagus?",
+        "Belum tentu. Rebound tinggi biasanya terasa \"hidup\" saat dipakai tempo atau lari cepat. Tapi untuk easy run, sebagian pelari justru lebih suka midsole yang lebih tenang dan stabil. Angka ini sebaiknya dibaca bareng skor stabilitas, kenyamanan, dan hasil wear test di halaman masing-masing sepatu.",
+        "> Catatan: ukuran sepatu yang kami tes berbeda-beda, dari EU 40,5 sampai EU 43 1/3, mengikuti ukuran kaki tester. Karena itu angka berat tidak kami bandingkan di artikel ini, sebab ukuran yang lebih besar wajar lebih berat.",
+        "Detail lengkap tiap sepatu, mulai dari berat, drop, sampai skor akhirnya, bisa kamu buka di database."
+      ]
+    },
+    {
+      "id": "kenapa-kami-dremel-sepatu",
+      "judul": "Kenapa Kami Dremel Sepatu Sampai Bolong?",
+      "tanggal": "2026-11-12",
+      "kategori": "Metode Tes",
+      "penulis": "Tim Shoe Police",
+      "gambar": "",
+      "ringkasan": "Tes dremel adalah cara cepat untuk melihat seberapa tahan upper dan outsole terhadap gesekan, tanpa harus menunggu berbulan-bulan pemakaian.",
+      "sepatu": [],
+      "isi": [
+        "Banyak sepatu mengklaim \"durable\" atau \"tahan lama\". Untuk membuktikannya lewat pemakaian, kita butuh waktu berbulan-bulan. Tes dremel memberi gambaran awal yang lebih cepat dan bisa diulang dengan cara yang sama di setiap sepatu.",
+        "## Dremel upper",
+        "Material upper dikikis pakai mata amplas grit 120 pada kecepatan 15.500 rpm, maksimal 10 detik per material. Kami ukur tebal material sebelum dan sesudah, lalu catat di detik ke berapa material mulai rusak atau bolong.",
+        "## Dremel outsole",
+        "Untuk outsole kami pakai amplas yang lebih kasar (grit 80) dengan kecepatan yang sama, maksimal 20 detik, dan tekanan dijaga tetap. Yang dinilai adalah berapa persen ketebalan karet yang hilang. Standar penilaiannya dibedakan per jenis karet, supaya outsole tipis dan tebal tetap dinilai adil.",
+        "## Apa artinya buat kamu?",
+        "Upper yang bolong cepat biasanya lebih rawan sobek di titik lipatan atau area jempol. Outsole yang cepat aus berarti sol akan lebih cepat licin dan tipis, terutama kalau sering dipakai di aspal.",
+        "> Tes dremel tidak menggantikan pemakaian nyata. Tes ini hanya alat banding: dengan alat dan cara yang sama, sepatu mana yang lebih tahan gesekan dibanding sepatu lain."
+      ]
+    },
+    {
+      "id": "cara-membaca-skor-shoe-police",
+      "judul": "Cara Membaca Skor Bedah Shoe Police",
+      "tanggal": "2026-11-11",
+      "kategori": "Panduan",
+      "penulis": "Tim Shoe Police",
+      "gambar": "",
+      "ringkasan": "Skor akhir 0–10 kami dibangun dari 4 layer: material, konstruksi, fungsi, dan kenyamanan. Begini cara membacanya.",
+      "sepatu": [],
+      "isi": [
+        "Setiap sepatu di database punya satu skor akhir dari 0 sampai 10. Skor itu tidak muncul dari kesan sekilas, tetapi gabungan dari empat layer penilaian.",
+        "## 4 layer penilaian",
+        "- Material: ketahanan upper dan outsole (tes dremel) serta respons midsole (dropball dan durometer).",
+        "- Konstruksi: kekuatan lem atau jahitan sol, kerapian jahitan dan panel, serta kontrol struktur seperti heel counter dan torsional.",
+        "- Fungsi: heel slip, stabilitas lateral, torsional saat dipakai bergerak, dan transisi dari tumit ke ujung kaki.",
+        "- Kenyamanan: fit, rasa saat berdiri lama, rasa saat berjalan, dan tingkat pegal setelah dipakai.",
+        "## Bobot berbeda per tipe sepatu",
+        "Bobot tiap layer menyesuaikan tipe sepatunya. Sepatu lifestyle, misalnya, memberi porsi lebih besar pada kenyamanan jalan. Sepatu outdoor lebih menekankan material dan konstruksi.",
+        "## Arti warna skor",
+        "- 8,5 ke atas: luar biasa",
+        "- 7,5 sampai 8,4: bagus",
+        "- 6,5 sampai 7,4: cukup",
+        "- 5 sampai 6,4: kurang",
+        "- di bawah 5: buruk",
+        "Selain skor akhir, di setiap halaman sepatu kamu juga bisa melihat posisinya dibanding rata-rata sepatu sekategori. Misalnya \"lebih ringan dari 70% sepatu running\". Bagian itu biasanya lebih berguna daripada skor akhir saja, karena kebutuhan tiap orang berbeda."
+      ]
+    }
+  ]
+}
