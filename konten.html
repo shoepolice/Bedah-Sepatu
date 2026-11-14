@@ -6,13 +6,16 @@
 <title>Konten — Shoe Police</title>
 <link rel="icon" href="assets/logo/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=34">
+<link rel="stylesheet" href="assets/style.css?v=35">
 </head>
 <body data-hal="konten">
 <main class="wrap isi-hal">
   <h1>Konten <span style="background:var(--kuning);padding:0 8px">terbaru</span></h1>
   <p class="lead">Video bedah, investigasi, dan carousel dari YouTube dan Instagram Shoe Police.</p>
   <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px" id="tombol-sos"></div>
+
+  <h2 class="sek">Segmen konten</h2>
+  <div class="dua" id="segmen"></div>
 
   <h2 class="sek">YouTube</h2>
   <div class="embed-grid" id="yt"></div>
@@ -21,13 +24,16 @@
   <div class="embed-grid" id="ig"></div>
 </main>
 
-<script src="assets/app.js?v=34"></script>
+<script src="assets/app.js?v=35"></script>
 <script>
 SP.muatConfig().then(c => {
   const k = c.kontak || {};
   document.getElementById('tombol-sos').innerHTML =
     [['YouTube', k.youtube], ['TikTok', k.tiktok], ['Instagram', k.instagram], ['Femme Police', k.instagramSPW], ['NSP Project', k.instagramNSP]]
       .filter(x => x[1]).map(([t, u]) => `<a class="tombol garis" href="${u}" target="_blank" rel="noopener">${t}</a>`).join('');
+
+  document.getElementById('segmen').innerHTML = (c.segmen || []).map(s =>
+    `<div class="box"><h3>${SP.esc(s.nama)}</h3><p>${SP.esc(s.desc)}</p></div>`).join('');
 
   const yt = (c.videoYoutube || []).map(SP.ytId).filter(Boolean);
   document.getElementById('yt').innerHTML = yt.length

@@ -6,12 +6,12 @@
 <title>Hasil Bedah — Shoe Police</title>
 <link rel="icon" href="assets/logo/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=34">
+<link rel="stylesheet" href="assets/style.css?v=35">
 </head>
 <body data-hal="database">
 <main class="wrap" id="isi"><p class="kosong-info">Memuat…</p></main>
 
-<script src="assets/app.js?v=34"></script>
+<script src="assets/app.js?v=35"></script>
 <script>
 (async () => {
   const id = new URLSearchParams(location.search).get('id');
@@ -82,11 +82,13 @@
 
   // UPPER
   const U = D.upper || {};
-  const htmlUpper = (U.bagian?.length || U.dremel?.length || U.lining) ? `
+  const daftarQA = (judul, arr) => arr?.length ? `<div class="qa"><h4>${judul}</h4><dl>${arr.map(x => `<div><dt>${e(x.label.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</dt><dd>${e(x.hasil)}</dd></div>`).join('')}</dl></div>` : '';
+  const htmlUpper = (U.bagian?.length || U.dremel?.length || U.lining || U.uji?.length) ? `
     ${U.bagian?.length ? `<h3 class="sub">Material per bagian</h3><div class="tbl-wrap"><table class="tbl-tes"><thead><tr><th>Bagian upper</th><th>Material</th></tr></thead><tbody>
       ${U.bagian.map(b => `<tr><td>${e(b.bagian)}</td><td>${e(b.material)}</td></tr>`).join('')}</tbody></table></div>` : ''}
-    ${kv([['Panel penguat (overlay)', U.panel && U.panel + (U.panelMaterial ? ' · ' + U.panelMaterial : '')], ['Lining', U.lining?.material], ['Hasil dremel lining', U.lining?.hasil], ['Proteksi air', U.air?.proteksi], ['Membran', U.air?.membran]])}
-    ${U.dremel?.length ? `<h3 class="sub">Tebal upper sebelum & setelah dremel</h3><p class="ket-h">Dremel grit 120, 15.500 rpm, maksimal 10 detik per material.</p>
+    ${kv([['Panel penguat (overlay)', U.panel && U.panel + (U.panelMaterial ? ' · ' + U.panelMaterial : '')], ['Lining', !U.bagian?.some(b => /lining/i.test(b.bagian)) && U.lining?.material], ['Hasil dremel lining', U.lining?.hasil], ['Proteksi air', U.air?.proteksi], ['Membran', U.air?.membran], ['Burn test', U.burn]])}
+    ${U.uji?.length ? `<h3 class="sub">Tes upper tanpa dremel</h3><div class="qa-grid">${daftarQA('Finishing & ketahanan', U.uji)}</div>` : ''}
+    ${U.dremel?.length ? `<h3 class="sub">${U.dremel.some(x => ada(x.sebelum)) ? 'Tebal upper sebelum & setelah dremel' : 'Hasil dremel upper'}</h3><p class="ket-h">Dremel grit 120, 15.500 rpm, maksimal 10 detik per material.</p>
       ${grafikTebal(U.dremel, x => [x.bagian, x.material].filter(Boolean).join(' · '))}
       ${tabelDremel(U.dremel, [['Bagian', x => e(x.bagian || '–')], ['Material', x => e(x.material || '–')], ['Sebelum', x => mm(x.sebelum)], ['Setelah', x => mm(x.setelah)], ['Terkikis', x => mm(x.terkikis)], ['Hasil', x => e(x.hasil || '–')], ['Kualitas', x => kualitas(x.kualitas) + (ada(x.skor) ? ` <small>${f(x.skor)}</small>` : '') || '–']])}` : ''}` : '';
 
@@ -102,6 +104,12 @@
           <div class="g-b c2" style="height:${Math.max((d.p2?.[i] ?? 0) / mx * 100, 1)}%" title="Tes ${i + 1} · pantulan 2: ${ada(d.p2?.[i]) ? f(d.p2[i]) + ' cm' : '–'}"><b>${ada(d.p2?.[i]) ? f(d.p2[i]) : '–'}</b></div>
         </div><span>Tes ${i + 1}</span></div>`).join('')}
         ${ada(d.p1Avg) ? `<div class="g-avg" title="Rata-rata pantulan pertama: ${f(d.p1Avg)} cm"></div>` : ''}</div><div class="g-sat">Tinggi pantulan (cm) · bola dijatuhkan dari ${f(d.tinggi || 100)} cm</div></div>
+      <div class="tbl-wrap"><table class="tbl-tes tbl-drop"><thead><tr><th>Tes ke-</th>${d.p1.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Rerata</th></tr></thead><tbody>
+        <tr><td>Pantulan 1 (cm)</td>${d.p1.map(v => `<td>${ada(v) ? f(v) : '–'}</td>`).join('')}<td><b>${ada(d.p1Avg) ? f(d.p1Avg) : '–'}</b></td></tr>
+        ${d.p2?.some(ada) ? `<tr><td>Pantulan 2 (cm)</td>${d.p1.map((_, i) => `<td>${ada(d.p2[i]) ? f(d.p2[i]) : '–'}</td>`).join('')}<td><b>${ada(d.p2Avg) ? f(d.p2Avg) : '–'}</b></td></tr>` : ''}
+        <tr><td>Rebound %</td>${d.p1.map(v => `<td>${ada(v) ? f(Math.round(v / (d.tinggi || 100) * 1000) / 10) : '–'}</td>`).join('')}<td><b>${ada(d.rebound) ? f(d.rebound) : '–'}</b></td></tr>
+      </tbody></table></div>
+      <p class="ket-h">Rata-rata = jumlah 5 tes ÷ 5 · Rebound = pantulan 1 ÷ tinggi jatuh × 100% · Retensi = pantulan 2 ÷ pantulan 1 × 100%.</p>
       <div class="angka-grid">${[['Rata-rata pantulan 1', d.p1Avg, 'cm'], ['Rata-rata pantulan 2', d.p2Avg, 'cm'], ['Rebound', d.rebound, '%'], ['Retensi pantulan', d.retensi, '%']]
         .filter(x => ada(x[1])).map(([k, v, u]) => `<div><span>${k}</span><b>${f(v)}<i>${u}</i></b></div>`).join('')}</div></div>`;
   };
@@ -114,18 +122,21 @@
       <div class="g-sat">Kekerasan Shore A (HA) · makin kecil makin empuk</div></div>`;
   };
   const dh = D.dropHeel, dtoe = D.dropToe;
-  const htmlMidsole = (M.material?.length || dh || dtoe) ? `
-    ${kv([['Material midsole', (M.material || [a.materialMidsole]).filter(Boolean).join(' + ')], ['Tipe midsole', M.tipe], ['Kelembutan heel / forefoot', (M.kelasHeel || M.kelasForefoot) && `${M.kelasHeel || '–'} / ${M.kelasForefoot || '–'}`], ['Selisih heel vs forefoot', ada(M.selisih) && f(M.selisih) + ' HA'], ['Transisi antar zona', M.transisi]])}
+  const htmlMidsole = (M.material?.length || dh || dtoe || ada(M.heel) || ada(M.forefoot) || D.footbed?.length || a.materialMidsole) ? `
+    ${kv([['Material midsole', (M.material || [a.materialMidsole]).filter(Boolean).join(' + ')], ['Tipe midsole', M.tipe], ['Kelembutan heel / forefoot', (M.kelasHeel || M.kelasForefoot) && `${M.kelasHeel || '–'} / ${M.kelasForefoot || '–'}`], ['Selisih heel vs forefoot', ada(M.selisih) && f(M.selisih) + ' HA'], ['Transisi antar zona', M.transisi], ['Plate / shank', M.plate]])}
+    ${D.midsoleRasa?.length || D.footbed?.length ? `<div class="qa-grid">${daftarQA('Rasa midsole saat dipakai', D.midsoleRasa)}${daftarQA('Footbed & bantalan', D.footbed)}</div>` : ''}
     ${dh || dtoe ? `<h3 class="sub">Tes dropball (5x)</h3><p class="ket-h">Bola yang sama dijatuhkan 5 kali di tiap titik, direkam slow-motion. Makin tinggi pantulan, makin besar energi yang dikembalikan midsole.</p>
       <div class="drop-grid">${grafikDrop(dh, 'heel')}${grafikDrop(dtoe, (D.dropToeLabel || 'toe').toLowerCase())}</div>` : ''}
-    ${ada(M.heel) || ada(M.forefoot) ? `<h3 class="sub">Durometer midsole</h3><p class="ket-h">Rata-rata 3 titik per area.</p>
+    ${ada(M.heel) || ada(M.forefoot) ? `<h3 class="sub">Durometer midsole</h3><p class="ket-h">Durometer Shore A, rata-rata 3 titik per area. Di bawah 15 HA = sangat empuk, 15–18 empuk, 18–22 seimbang, di atas 22 keras.</p>
       ${grafikShore([['Heel' + (M.material?.[1] ? ' · ' + M.material[0] : ''), M.heel], ['Forefoot' + (M.material?.[1] ? ' · ' + M.material[0] : ''), M.forefoot],
         ['Heel · ' + (M.material?.[1] || 'material 2'), M.heel2], ['Forefoot · ' + (M.material?.[1] || 'material 2'), M.forefoot2], ...(M.lain || []).map((v, i) => ['Material lain ' + (i + 1), v])])}` : ''}` : '';
 
   // OUTSOLE
   const O = D.outsole || {};
-  const htmlOutsole = (O.dremel?.length || O.shore?.length) ? `
-    ${kv([['Material outsole', (O.dremel || []).map(x => x.material).filter(Boolean).join(' + ') || a.outsoleMaterial], ['Standar penilaian', O.standar], ['Kekerasan rata-rata', ada(O.shoreAvg) && f(O.shoreAvg) + ' HA']])}
+  const htmlOutsole = (O.dremel?.length || O.shore?.length || a.outsoleMaterial) ? `
+    ${kv([['Material outsole', (O.dremel || []).map(x => x.material).filter(Boolean).join(' + ') || a.outsoleMaterial], ['Standar penilaian', O.standar], ['Kategori', O.kategori], ['Kekerasan rata-rata', ada(O.shoreAvg) && f(O.shoreAvg) + ' HA']])}
+    ${O.info?.length ? `<div class="qa-grid">${daftarQA('Cek outsole', O.info)}</div>` : ''}
+    ${O.dremel?.some(x => !ada(x.sebelum) && (x.hasil || x.kualitas)) && !O.dremel?.some(x => ada(x.sebelum)) ? `<h3 class="sub">Hasil dremel outsole</h3>${tabelDremel(O.dremel, [['Material', x => e(x.material || '–')], ['Hasil', x => e(x.hasil || '–')], ['Kualitas', x => kualitas(x.kualitas) || '–']])}` : ''}
     ${O.dremel?.some(x => ada(x.sebelum)) ? `<h3 class="sub">Tebal outsole sebelum & setelah dremel</h3><p class="ket-h">Dremel grit 80, 15.500 rpm, maksimal 20 detik dengan tekanan tetap.</p>
       ${grafikTebal(O.dremel, x => [x.area, x.material].filter(Boolean).join(' · '))}
       ${tabelDremel(O.dremel, [['Area', x => e(x.area || '–')], ['Material', x => e(x.material || '–')], ['Sebelum', x => mm(x.sebelum)], ['Setelah', x => mm(x.setelah)], ['Aus', x => mm(x.aus)], ['Sisa', x => ada(x.sisa) ? f(x.sisa) + '%' : '–'], ['Hasil', x => e(x.hasil || '–')], ['Kualitas', x => kualitas(x.kualitas) + (ada(x.skor) ? ` <small>${f(x.skor)}</small>` : '') || '–']])}` : ''}
@@ -135,13 +146,12 @@
   const T = D.traction || [];
   const baseT = T.filter(x => !/setelah dremel/i.test(x.kondisi));
   const htmlTraksi = T.length ? `<div class="tbl-wrap"><table class="tbl-tes"><thead><tr><th>Permukaan</th><th>Sebelum dremel</th><th>Setelah dremel</th></tr></thead><tbody>
-    ${baseT.map(x => { const sd = T.find(y => /setelah dremel/i.test(y.kondisi) && y.kondisi.toLowerCase().startsWith(x.kondisi.toLowerCase()));
-      return `<tr><td>${e(x.kondisi.replace(/^\w/, c => c.toUpperCase()))}</td><td>${level(x.level || x.hasil)}<small class="hasil">${e(x.hasil && x.hasil !== x.level ? x.hasil : '')}</small></td><td>${sd ? level(sd.level || sd.hasil) : '–'}</td></tr>`; }).join('')}
+    ${baseT.map(x => { const sd = T.find(y => /setelah dremel/i.test(y.kondisi) && y.kondisi.toLowerCase().replace(/\(.*|setelah dremel/g, '').trim() === x.kondisi.toLowerCase().replace(/\(.*|sebelum dremel/g, '').trim());
+      return `<tr><td>${e(x.kondisi.replace(/\s*\(sebelum dremel\)/i, '').replace(/^\w/, c => c.toUpperCase()))}</td><td>${level(x.level || x.hasil)}<small class="hasil">${e(x.hasil && x.hasil !== x.level ? x.hasil : '')}</small></td><td>${sd ? level(sd.level || sd.hasil) : '–'}</td></tr>`; }).join('')}
     </tbody></table></div>${D.tractionRetensi ? `<p class="ket-h">Traction retention: <b>${e(D.tractionRetensi)}</b></p>` : ''}` : '';
 
   // PEMAKAIAN & KONSTRUKSI
-  const daftarQA = (judul, arr) => arr?.length ? `<div class="qa"><h4>${judul}</h4><dl>${arr.map(x => `<div><dt>${e(x.label.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</dt><dd>${e(x.hasil)}</dd></div>`).join('')}</dl></div>` : '';
-  const htmlPakai = (D.wear?.length || D.tangan?.length || D.bonding?.length) ? `<div class="qa-grid">${daftarQA('Tes pemakaian', D.wear)}${daftarQA('Tes tangan & konstruksi', D.tangan)}${daftarQA('Tes bonding', D.bonding)}</div>` : '';
+  const htmlPakai = (D.wear?.length || D.tangan?.length || D.bonding?.length || D.hak?.length) ? `${D.catatan?.insight && !/^migrasi|^\[tipe/i.test(D.catatan.insight) ? `<blockquote class="insight">${e(D.catatan.insight.replace(/^(\s*\[[^\]]*\])+\s*/, ''))}</blockquote>` : ''}<div class="qa-grid">${daftarQA('Tes pemakaian', D.wear)}${daftarQA('Tes tangan & konstruksi', D.tangan)}${daftarQA('Hak & heel tip', D.hak)}${daftarQA('Tes bonding', D.bonding)}${daftarQA('Ukuran & geometri', D.ukur)}</div>` : '';
 
   const bagian = [
     ['ringkasan', 'Ringkasan', plus.length || minus.length],

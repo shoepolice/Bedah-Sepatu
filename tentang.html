@@ -6,7 +6,7 @@
 <title>Tentang — Shoe Police</title>
 <link rel="icon" href="assets/logo/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=34">
+<link rel="stylesheet" href="assets/style.css?v=35">
 </head>
 <body data-hal="tentang">
 <main id="isi-tentang">
@@ -21,8 +21,6 @@
       <div><div class="tt-pendekatan" id="tt-pendekatan"></div><div id="tt-mengapa" class="tt-teks"></div></div>
     </section>
 
-    <section class="tt-sek"><h2 class="tt-judul">Segmen <em>konten</em></h2><div class="dua" id="segmen"></div></section>
-
     <section class="tt-sek"><h2 class="tt-judul">Jenis <em>konten</em></h2><p class="lead">Jenis konten yang bisa kami kerjakan bersama brand.</p><div class="tt-jenis" id="tt-jenis"></div></section>
 
     <section class="tt-sek"><h2 class="tt-judul">Karakter <em>audiens</em></h2><p class="lead" id="tt-aud-intro"></p>
@@ -36,7 +34,7 @@
   </div>
 </main>
 
-<script src="assets/app.js?v=34"></script>
+<script src="assets/app.js?v=35"></script>
 <script>
 SP.muatConfig().then(c => {
   const T = c.tentang || {}, e = SP.esc;
@@ -55,7 +53,6 @@ SP.muatConfig().then(c => {
   set('tt-intro', (T.intro || []).map(p => `<p>${md(p)}</p>`).join(''));
   set('tt-pendekatan', (T.pendekatan || []).map(p => `<div><b>${e(p.nama)}</b><span>${e(p.desc)}</span></div>`).join(''));
   set('tt-mengapa', (T.mengapa || []).map(p => `<p>${md(p)}</p>`).join(''));
-  set('segmen', (c.segmen || []).map(s => `<div class="box"><h3>${e(s.nama)}</h3><p>${e(s.desc)}</p></div>`).join(''));
   set('tt-jenis', (T.jenisKonten || []).map((j, i) => `<div class="${i % 3 === 1 ? 'putih' : ''}"><span>${String(i + 1).padStart(2, '0')}</span>${e(j)}</div>`).join(''));
   const A = T.audiens || {};
   set('tt-aud-intro', e(A.intro || ''));

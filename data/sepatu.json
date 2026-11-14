@@ -1,6 +1,6 @@
 {
- "_catatan": "Data dari Form Bedah (export 13 Nov 2026). Kalau Apps Script sudah dipasang, data live menggantikan file ini.",
- "diperbarui": "2026-11-13",
+ "_catatan": "Data dari Form Bedah (Google Sheets live, 14 Nov 2026). Kalau Apps Script sudah dipasang, data live menggantikan file ini.",
+ "diperbarui": "2026-11-14",
  "sepatu": [
   {
    "id": "running-ortuseight-hypersonic-pikachu-2",
@@ -5132,6 +5132,148 @@
    "video": "",
    "lengkap": true,
    "_urut": 74
+  },
+  {
+   "id": "running-anta-pg7-travel-25",
+   "tab": "ANTA PG7 Travel",
+   "kategori": "Running",
+   "brand": "ANTA",
+   "model": "PG7 Travel",
+   "subtipe": "Max cushion",
+   "size": "46",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Dimas",
+   "skor": 7.2,
+   "verdict": "Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Fair",
+     "skor": 7.0,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Fit & stabilitas",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "15%"
+    },
+    {
+     "nama": "Lari",
+     "kelas": "Fair",
+     "skor": 6.5,
+     "bobot": "40%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 343.9,
+    "reboundHeel": 38.4,
+    "reboundToe": 40.0,
+    "midsoleHeel": 6.0,
+    "midsoleForefoot": 7.0,
+    "materialMidsole": "EVA",
+    "stackHeel": 43.0,
+    "stackToe": 29.2,
+    "drop": 13.8,
+    "upperSkor": 3.3,
+    "outsoleSkor": 8.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "High",
+    "gripBasah": "High",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "",
+   "video": "",
+   "_urut": 75,
+   "lengkap": true
+  },
+  {
+   "id": "court-anta-kai-3-6",
+   "tab": "Anta Kai 3",
+   "kategori": "Court",
+   "brand": "Anta",
+   "model": "Kai 3",
+   "subtipe": "Basket indoor",
+   "size": "43",
+   "harga": "",
+   "tanggal": "",
+   "tester": "Ray",
+   "skor": 8.4,
+   "verdict": "Very Good",
+   "layer": [
+    {
+     "nama": "Material",
+     "kelas": "Excellent",
+     "skor": 9.1,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Konstruksi",
+     "kelas": "Very Good",
+     "skor": 8.3,
+     "bobot": "25%"
+    },
+    {
+     "nama": "Fit & lockdown",
+     "kelas": "Good",
+     "skor": 7.8,
+     "bobot": "10%"
+    },
+    {
+     "nama": "Jalan",
+     "kelas": "Very Good",
+     "skor": 8.5,
+     "bobot": "5%"
+    },
+    {
+     "nama": "Main",
+     "kelas": "Very Good",
+     "skor": 8.2,
+     "bobot": "35%"
+    }
+   ],
+   "foto": "",
+   "tag": [],
+   "angka": {
+    "berat": 453.3,
+    "reboundHeel": 56.8,
+    "reboundToe": null,
+    "midsoleHeel": 21.0,
+    "midsoleForefoot": 20.0,
+    "materialMidsole": "TPU / eTPU (Boost-type)",
+    "stackHeel": 30.5,
+    "stackToe": null,
+    "drop": 10.3,
+    "upperSkor": 8.3,
+    "outsoleSkor": 9.5,
+    "outsoleMaterial": "Karet solid (solid rubber)",
+    "gripKering": "",
+    "gripBasah": "",
+    "sizing": ""
+   },
+   "klaim": "",
+   "klaimHasil": "",
+   "masalah": "Pakai ankle support terasa kencang di heel bagian belakang",
+   "video": "",
+   "_urut": 76,
+   "lengkap": true
   }
  ]
 }
