@@ -961,3 +961,62 @@ a.sos:hover svg{color:var(--kuning);opacity:1}
 }
 .d-badan{grid-template-columns:220px minmax(0,1fr)}.d-badan>div{min-width:0}@media(max-width:900px){.d-badan{grid-template-columns:minmax(0,1fr)}}
 .drop .angka-grid{grid-template-columns:1fr 1fr}.drop .angka-grid div{padding:10px 0}@media(max-width:640px){.sh-zona{display:none}}
+
+/* ===== HALAMAN TENTANG ===== */
+.tt-hero{background:var(--hitam);color:#fff;padding:52px 0 56px;overflow:hidden}
+.tt-hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.tt-hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin-bottom:18px}
+.tt-hero h1 em,.tt-judul em{font-style:normal;color:var(--kuning)}
+.tt-intro p{color:#d6d6d6;max-width:640px;margin-bottom:12px;font-size:1rem}
+.tt-intro b{color:var(--kuning)}
+.tt-logo{aspect-ratio:1;max-width:340px;justify-self:center;width:100%;border-radius:50%;background:radial-gradient(circle,#3a3a3a,#2f2f2f 70%);display:grid;place-items:center}
+.tt-logo img{width:62%}
+.tt{padding-top:12px}
+.tt-sek{padding:44px 0 8px;border-bottom:1px solid var(--garis)}
+.tt-sek:last-child{border-bottom:0}
+.tt-judul{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:10px}
+.tt-judul em{color:var(--teks);background:var(--kuning);padding:0 8px}
+.tt-sub{font-size:1.4rem;margin:30px 0 4px}
+.tt-mengapa{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.tt-pendekatan{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.tt-pendekatan div{background:var(--kuning);border-radius:12px;padding:14px}
+.tt-pendekatan b{display:block;font-family:var(--judul);font-weight:400;text-transform:uppercase;font-size:1.35rem;letter-spacing:.5px}
+.tt-pendekatan span{font-size:.84rem;line-height:1.4;display:block;margin-top:4px}
+.tt-teks p{color:var(--redup);margin-bottom:12px;max-width:680px}
+.tt-teks i{font-style:italic}
+.tt-jenis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 12px}
+.tt-jenis div{background:var(--kuning);border-radius:14px;padding:16px 18px;font-weight:700;display:flex;align-items:center;gap:12px;min-height:72px}
+.tt-jenis div.putih{background:var(--hitam);color:#fff}
+.tt-jenis span{font-family:var(--judul);font-size:1.6rem;opacity:.45;flex:none}
+.tt-stat{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.tt-stat div{border-radius:14px;padding:18px;background:var(--kuning);text-align:center}
+.tt-stat div:nth-child(2){background:var(--hitam);color:#fff}
+.tt-stat small{display:block;font-family:var(--judul);text-transform:uppercase;font-size:1.15rem;letter-spacing:.5px}
+.tt-stat b{display:block;font-size:clamp(2.2rem,5vw,3rem);font-weight:800;line-height:1.1;margin:4px 0}
+.tt-stat span{font-size:.84rem}
+.tt-ciri{color:var(--redup);max-width:720px}
+.tt-plat{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 12px}
+.tt-p{border:1px solid var(--garis);border-radius:16px;overflow:hidden;box-shadow:var(--bayang);background:#fff}
+.tt-p-kepala{display:flex;align-items:center;gap:12px;background:var(--hitam);color:#fff;padding:16px 18px}
+.tt-p-kepala svg{color:var(--kuning);flex:none}
+.tt-p-kepala b{display:block;font-family:var(--judul);font-weight:400;text-transform:uppercase;font-size:1.5rem;line-height:1}
+.tt-p-kepala span{font-size:.85rem;color:var(--kuning);font-weight:700}
+.tt-p dl{padding:6px 18px 12px}
+.tt-p dl>div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--garis);font-size:.88rem}
+.tt-p dl>div:first-child{border-top:0}
+.tt-p dt{color:var(--redup)}
+.tt-p dd{text-align:right}
+.tt-capai{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 30px}
+.tt-capai div{background:var(--kuning);border-radius:16px;padding:22px;text-align:center}
+.tt-capai div:nth-child(2){background:var(--hitam);color:#fff}
+.tt-capai i{display:inline-grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#fff;color:var(--hitam);margin-bottom:10px}
+.tt-capai b{display:block;font-family:var(--judul);font-weight:400;text-transform:uppercase;font-size:1.5rem}
+.tt-capai span{font-size:.88rem}
+@media (max-width:860px){
+  .tt-hero-grid,.tt-mengapa{grid-template-columns:1fr}
+  .tt-logo{max-width:220px}
+  .tt-jenis,.tt-plat,.tt-capai{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .tt-jenis,.tt-plat,.tt-capai,.tt-stat,.tt-pendekatan{grid-template-columns:1fr}
+}

@@ -1,350 +1,491 @@
 {
-  "_catatan": "Edit file ini aja buat ganti kategori beranda, link, video, dan tim. Gak perlu sentuh kode.",
-  "apiUrl": "",
-  "hero": {
-    "judul": "Sepatu dibedah, bukan cuma direview",
-    "sub": "Kami beli, timbang, dremel, ukur, lalu pakai sendiri. Semua skor berasal dari lab Shoe Police, bukan dari klaim brand.",
-    "gambar": "",
-    "sedangDites": 0,
-    "video": "",
-    "_catatan": "gambar/video = latar hero (opsional). Video: link file .mp4 pendek tanpa suara (misal footage bedah di lab)."
+ "_catatan": "Edit file ini aja buat ganti kategori beranda, link, video, dan tim. Gak perlu sentuh kode.",
+ "apiUrl": "",
+ "hero": {
+  "judul": "Sepatu dibedah, bukan cuma direview",
+  "sub": "Kami beli, timbang, dremel, ukur, lalu pakai sendiri. Semua skor berasal dari lab Shoe Police, bukan dari klaim brand.",
+  "gambar": "",
+  "sedangDites": 0,
+  "video": "",
+  "_catatan": "gambar/video = latar hero (opsional). Video: link file .mp4 pendek tanpa suara (misal footage bedah di lab)."
+ },
+ "_kategoriBeranda": "Urutan di sini = urutan card di beranda & daftar kategori di panel Filter. cocok = salah satu kata kunci ada · wajib = semua kata kunci harus ada · kecuali = dikeluarkan. Kata kunci dicari di kategori Form Bedah, Sub Type/Kategori lari, dan baris 'Tag website'. ikon: sepatu / boot / sandal / spike / court / heels. gambar boleh kosong.",
+ "kategoriBeranda": [
+  {
+   "id": "baru",
+   "nama": "Baru Dibedah",
+   "deskripsi": "Hasil lab terbaru dari Shoe Police",
+   "ikon": "sepatu",
+   "gambar": "",
+   "otomatis": "terbaru",
+   "jumlah": 12
   },
-  "_kategoriBeranda": "Urutan di sini = urutan card di beranda & daftar kategori di panel Filter. cocok = salah satu kata kunci ada · wajib = semua kata kunci harus ada · kecuali = dikeluarkan. Kata kunci dicari di kategori Form Bedah, Sub Type/Kategori lari, dan baris 'Tag website'. ikon: sepatu / boot / sandal / spike / court / heels. gambar boleh kosong.",
-  "kategoriBeranda": [
-    {
-      "id": "baru",
-      "nama": "Baru Dibedah",
-      "deskripsi": "Hasil lab terbaru dari Shoe Police",
-      "ikon": "sepatu",
-      "gambar": "",
-      "otomatis": "terbaru",
-      "jumlah": 12
-    },
-    {
-      "id": "running",
-      "nama": "Running",
-      "deskripsi": "Daily trainer, tempo, sampai race day",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "running"
-      ],
-      "kecuali": [
-        "trail",
-        "spike",
-        "cross country"
-      ]
-    },
-    {
-      "id": "trail-run",
-      "nama": "Trail Run",
-      "deskripsi": "Grip dan proteksi buat medan tanah & batu",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "trail"
-      ]
-    },
-    {
-      "id": "hiking-boots",
-      "nama": "Hiking Boots",
-      "deskripsi": "Sepatu gunung mid/high cut",
-      "ikon": "boot",
-      "gambar": "",
-      "wajib": [
-        "hiking"
-      ],
-      "cocok": [
-        "boot",
-        "mid",
-        "high"
-      ]
-    },
-    {
-      "id": "hiking-shoes",
-      "nama": "Hiking Shoes",
-      "deskripsi": "Sepatu gunung low cut",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "hiking"
-      ],
-      "kecuali": [
-        "boot",
-        "sandal",
-        "mid",
-        "high"
-      ]
-    },
-    {
-      "id": "hiking-sandals",
-      "nama": "Hiking Sandals",
-      "deskripsi": "Sandal outdoor & gunung",
-      "ikon": "sandal",
-      "gambar": "",
-      "wajib": [
-        "sandal"
-      ],
-      "cocok": [
-        "gunung",
-        "outdoor",
-        "hiking",
-        "trekking"
-      ]
-    },
-    {
-      "id": "recovery-sandals",
-      "nama": "Recovery Sandals",
-      "deskripsi": "Sandal pemulihan setelah lari & aktivitas",
-      "ikon": "sandal",
-      "gambar": "",
-      "wajib": [
-        "sandal"
-      ],
-      "cocok": [
-        "recovery"
-      ]
-    },
-    {
-      "id": "sandal-harian",
-      "nama": "Sandal Harian",
-      "deskripsi": "Sandal jepit, slide, dan clog",
-      "ikon": "sandal",
-      "gambar": "",
-      "wajib": [
-        "sandal"
-      ],
-      "cocok": [
-        "jepit",
-        "flip",
-        "slide",
-        "clog",
-        "slip"
-      ],
-      "kecuali": [
-        "gunung",
-        "recovery"
-      ]
-    },
-    {
-      "id": "track-spikes",
-      "nama": "Track Spikes",
-      "deskripsi": "Sepatu paku buat lintasan",
-      "ikon": "spike",
-      "gambar": "",
-      "cocok": [
-        "spike",
-        "track"
-      ]
-    },
-    {
-      "id": "cross-country",
-      "nama": "Cross Country",
-      "deskripsi": "Lari lintas alam",
-      "ikon": "spike",
-      "gambar": "",
-      "cocok": [
-        "cross country",
-        "xc"
-      ]
-    },
-    {
-      "id": "walking",
-      "nama": "Walking",
-      "deskripsi": "Nyaman buat jalan kaki lama",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "walking"
-      ]
-    },
-    {
-      "id": "training",
-      "nama": "Training",
-      "deskripsi": "Gym, cross training, HIIT",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "training",
-        "gym"
-      ]
-    },
-    {
-      "id": "tennis",
-      "nama": "Tennis",
-      "deskripsi": "Tenis & padel",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "tenis",
-        "tennis",
-        "padel"
-      ]
-    },
-    {
-      "id": "basketball",
-      "nama": "Basketball",
-      "deskripsi": "Sepatu basket",
-      "ikon": "court",
-      "gambar": "",
-      "cocok": [
-        "basket"
-      ]
-    },
-    {
-      "id": "sneakers",
-      "nama": "Sneakers",
-      "deskripsi": "Sneakers lifestyle buat harian",
-      "ikon": "sepatu",
-      "gambar": "",
-      "cocok": [
-        "sneakers",
-        "lifestyle",
-        "casual"
-      ],
-      "kecuali": [
-        "hiking",
-        "gorpcore"
-      ]
-    },
-    {
-      "id": "women",
-      "nama": "Women Shoes",
-      "deskripsi": "Bedah sepatu cewek bareng Shoe Police Woman",
-      "ikon": "heels",
-      "gambar": "",
-      "cocok": [
-        "women",
-        "wanita",
-        "spw"
-      ]
-    },
-    {
-      "id": "outdoor",
-      "nama": "Outdoor & Gorpcore",
-      "deskripsi": "Hybrid outdoor buat harian",
-      "ikon": "boot",
-      "gambar": "",
-      "cocok": [
-        "gorpcore",
-        "outdoor"
-      ],
-      "kecuali": [
-        "sandal"
-      ]
-    },
-    {
-      "id": "court-lain",
-      "nama": "Court Lainnya",
-      "deskripsi": "Voli, badminton, futsal",
-      "ikon": "court",
-      "gambar": "",
-      "cocok": [
-        "voli",
-        "badminton",
-        "futsal"
-      ]
-    },
-    {
-      "id": "safety",
-      "nama": "Safety Shoes",
-      "deskripsi": "Impact test, tahan panas, kenyamanan kerja",
-      "ikon": "boot",
-      "gambar": "",
-      "cocok": [
-        "safety"
-      ]
-    },
-    {
-      "id": "kulit",
-      "nama": "Kulit & Boots",
-      "deskripsi": "Formal, loafers, dan boots kulit",
-      "ikon": "boot",
-      "gambar": "",
-      "cocok": [
-        "kulit",
-        "formal",
-        "loafer"
-      ],
-      "kecuali": [
-        "hiking",
-        "safety"
-      ]
-    }
-  ],
-  "tampilkanKategoriKosong": true,
-  "kontak": {
-    "email": "kreatifshoepolice@gmail.com",
-    "whatsapp": "",
-    "instagram": "https://www.instagram.com/shoepolice__/",
-    "instagramSPW": "https://www.instagram.com/femme_police/",
-    "youtube": "https://www.youtube.com/@shoepolice",
-    "tiktok": "https://www.tiktok.com/@shoepolice__",
-    "instagramNSP": "https://www.instagram.com/nspproject/"
+  {
+   "id": "running",
+   "nama": "Running",
+   "deskripsi": "Daily trainer, tempo, sampai race day",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "running"
+   ],
+   "kecuali": [
+    "trail",
+    "spike",
+    "cross country"
+   ]
   },
-  "videoYoutube": [],
-  "postInstagram": [],
-  "segmen": [
-    {
-      "nama": "Bedah Sepatu",
-      "desc": "Sepatu dites di studio: timbang, dropball, dremel upper & outsole, durometer, sizing, sampai wear test. Semua angkanya masuk ke database ini."
-    },
-    {
-      "nama": "Detective Shoe",
-      "desc": "Konten investigasi: sepatu KW, white label, harga yang gak masuk akal, sampai isu industri sepatu lokal."
-    },
-    {
-      "nama": "Shoe Inspector",
-      "desc": "Sejarah sepatu ikonik dalam video pendek."
-    },
-    {
-      "nama": "Shoe Police Woman (SPW)",
-      "desc": "Segmen buat cewek: bedah sepatu cewek, tren, dan isu standar penampilan perempuan di dunia kerja."
-    }
+  {
+   "id": "trail-run",
+   "nama": "Trail Run",
+   "deskripsi": "Grip dan proteksi buat medan tanah & batu",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "trail"
+   ]
+  },
+  {
+   "id": "hiking-boots",
+   "nama": "Hiking Boots",
+   "deskripsi": "Sepatu gunung mid/high cut",
+   "ikon": "boot",
+   "gambar": "",
+   "wajib": [
+    "hiking"
+   ],
+   "cocok": [
+    "boot",
+    "mid",
+    "high"
+   ]
+  },
+  {
+   "id": "hiking-shoes",
+   "nama": "Hiking Shoes",
+   "deskripsi": "Sepatu gunung low cut",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "hiking"
+   ],
+   "kecuali": [
+    "boot",
+    "sandal",
+    "mid",
+    "high"
+   ]
+  },
+  {
+   "id": "hiking-sandals",
+   "nama": "Hiking Sandals",
+   "deskripsi": "Sandal outdoor & gunung",
+   "ikon": "sandal",
+   "gambar": "",
+   "wajib": [
+    "sandal"
+   ],
+   "cocok": [
+    "gunung",
+    "outdoor",
+    "hiking",
+    "trekking"
+   ]
+  },
+  {
+   "id": "recovery-sandals",
+   "nama": "Recovery Sandals",
+   "deskripsi": "Sandal pemulihan setelah lari & aktivitas",
+   "ikon": "sandal",
+   "gambar": "",
+   "wajib": [
+    "sandal"
+   ],
+   "cocok": [
+    "recovery"
+   ]
+  },
+  {
+   "id": "sandal-harian",
+   "nama": "Sandal Harian",
+   "deskripsi": "Sandal jepit, slide, dan clog",
+   "ikon": "sandal",
+   "gambar": "",
+   "wajib": [
+    "sandal"
+   ],
+   "cocok": [
+    "jepit",
+    "flip",
+    "slide",
+    "clog",
+    "slip"
+   ],
+   "kecuali": [
+    "gunung",
+    "recovery"
+   ]
+  },
+  {
+   "id": "track-spikes",
+   "nama": "Track Spikes",
+   "deskripsi": "Sepatu paku buat lintasan",
+   "ikon": "spike",
+   "gambar": "",
+   "cocok": [
+    "spike",
+    "track"
+   ]
+  },
+  {
+   "id": "cross-country",
+   "nama": "Cross Country",
+   "deskripsi": "Lari lintas alam",
+   "ikon": "spike",
+   "gambar": "",
+   "cocok": [
+    "cross country",
+    "xc"
+   ]
+  },
+  {
+   "id": "walking",
+   "nama": "Walking",
+   "deskripsi": "Nyaman buat jalan kaki lama",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "walking"
+   ]
+  },
+  {
+   "id": "training",
+   "nama": "Training",
+   "deskripsi": "Gym, cross training, HIIT",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "training",
+    "gym"
+   ]
+  },
+  {
+   "id": "tennis",
+   "nama": "Tennis",
+   "deskripsi": "Tenis & padel",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "tenis",
+    "tennis",
+    "padel"
+   ]
+  },
+  {
+   "id": "basketball",
+   "nama": "Basketball",
+   "deskripsi": "Sepatu basket",
+   "ikon": "court",
+   "gambar": "",
+   "cocok": [
+    "basket"
+   ]
+  },
+  {
+   "id": "sneakers",
+   "nama": "Sneakers",
+   "deskripsi": "Sneakers lifestyle buat harian",
+   "ikon": "sepatu",
+   "gambar": "",
+   "cocok": [
+    "sneakers",
+    "lifestyle",
+    "casual"
+   ],
+   "kecuali": [
+    "hiking",
+    "gorpcore"
+   ]
+  },
+  {
+   "id": "women",
+   "nama": "Women Shoes",
+   "deskripsi": "Bedah sepatu cewek bareng Shoe Police Woman",
+   "ikon": "heels",
+   "gambar": "",
+   "cocok": [
+    "women",
+    "wanita",
+    "spw"
+   ]
+  },
+  {
+   "id": "outdoor",
+   "nama": "Outdoor & Gorpcore",
+   "deskripsi": "Hybrid outdoor buat harian",
+   "ikon": "boot",
+   "gambar": "",
+   "cocok": [
+    "gorpcore",
+    "outdoor"
+   ],
+   "kecuali": [
+    "sandal"
+   ]
+  },
+  {
+   "id": "court-lain",
+   "nama": "Court Lainnya",
+   "deskripsi": "Voli, badminton, futsal",
+   "ikon": "court",
+   "gambar": "",
+   "cocok": [
+    "voli",
+    "badminton",
+    "futsal"
+   ]
+  },
+  {
+   "id": "safety",
+   "nama": "Safety Shoes",
+   "deskripsi": "Impact test, tahan panas, kenyamanan kerja",
+   "ikon": "boot",
+   "gambar": "",
+   "cocok": [
+    "safety"
+   ]
+  },
+  {
+   "id": "kulit",
+   "nama": "Kulit & Boots",
+   "deskripsi": "Formal, loafers, dan boots kulit",
+   "ikon": "boot",
+   "gambar": "",
+   "cocok": [
+    "kulit",
+    "formal",
+    "loafer"
+   ],
+   "kecuali": [
+    "hiking",
+    "safety"
+   ]
+  }
+ ],
+ "tampilkanKategoriKosong": true,
+ "kontak": {
+  "email": "kreatifshoepolice@gmail.com",
+  "whatsapp": "",
+  "instagram": "https://www.instagram.com/shoepolice__/",
+  "instagramSPW": "https://www.instagram.com/femme_police/",
+  "youtube": "https://www.youtube.com/@shoepolice",
+  "tiktok": "https://www.tiktok.com/@shoepolice__",
+  "instagramNSP": "https://www.instagram.com/nspproject/"
+ },
+ "videoYoutube": [],
+ "postInstagram": [],
+ "segmen": [
+  {
+   "nama": "Bedah Sepatu",
+   "desc": "Sepatu dites di studio: timbang, dropball, dremel upper & outsole, durometer, sizing, sampai wear test. Semua angkanya masuk ke database ini."
+  },
+  {
+   "nama": "Detective Shoe",
+   "desc": "Konten investigasi: sepatu KW, white label, harga yang gak masuk akal, sampai isu industri sepatu lokal."
+  },
+  {
+   "nama": "Shoe Inspector",
+   "desc": "Sejarah sepatu ikonik dalam video pendek."
+  },
+  {
+   "nama": "Shoe Police Woman (SPW)",
+   "desc": "Segmen buat cewek: bedah sepatu cewek, tren, dan isu standar penampilan perempuan di dunia kerja."
+  }
+ ],
+ "_faq": "Pertanyaan di beranda. t = pertanyaan, j = jawaban. Tambah/hapus/ubah urutan bebas.",
+ "faq": [
+  {
+   "t": "Berapa pasang sepatu yang dipakai untuk satu kali bedah?",
+   "j": "Dua pasang per model: satu dipakai untuk wear test, satu lagi dibedah di lab."
+  },
+  {
+   "t": "Berapa lama satu sepatu dites?",
+   "j": "Tes pemakaian rata-rata sampai 7 hari. Untuk sneakers harian bisa lebih singkat. Setelah itu baru masuk ke tahap bedah dan pengukuran di lab."
+  },
+  {
+   "t": "Apakah sepatu hasil kerja sama dinilai berbeda?",
+   "j": "Tidak. Bedah kolaborasi melewati SOP, alat, dan cara penilaian yang sama dengan bedah independen."
+  },
+  {
+   "t": "Kenapa ukuran sepatu yang dites berbeda-beda?",
+   "j": "Ukuran mengikuti kaki tester yang memakainya. Karena itu angka berat sebaiknya dibandingkan dengan hati-hati, sebab ukuran yang lebih besar wajar lebih berat."
+  },
+  {
+   "t": "Bisa request sepatu tertentu untuk dibedah?",
+   "j": "Bisa. Kirim lewat halaman Kerja Sama atau DM Instagram Shoe Police."
+  }
+ ],
+ "tentang": {
+  "_catatan": "Isi halaman Tentang (tentang.html). Angka audiens diambil dari deck profil Shoe Police; perbarui di sini kalau ada data baru.",
+  "intro": [
+   "Industri alas kaki terus berkembang dengan hadirnya berbagai merek internasional yang menawarkan karakter, teknologi, material, dan segmentasi konsumen yang beragam. Di tengah persaingan tersebut, **komunikasi produk yang informatif dan relevan** menjadi salah satu faktor penting dalam membangun pemahaman serta kepercayaan konsumen terhadap sebuah brand.",
+   "**Shoe Police** hadir sebagai platform edukasi, investigasi, pengujian, dan media independen yang berfokus pada produk alas kaki. Melalui pendekatan teknis dan *storytelling*, Shoe Police membantu audiens memahami karakter produk secara lebih mendalam, mulai dari material, konstruksi, teknologi, kenyamanan, fungsi, hingga nilai produk."
   ],
-  "tim": [
-    {
-      "nama": "Oky",
-      "peran": "Talent & tester",
-      "foto": ""
-    },
-    {
-      "nama": "Yuli",
-      "peran": "Talent SPW",
-      "foto": ""
-    },
-    {
-      "nama": "Bimar",
-      "peran": "Videographer",
-      "foto": ""
-    },
-    {
-      "nama": "Dimas",
-      "peran": "Tim produksi",
-      "foto": ""
-    }
+  "pendekatan": [
+   {
+    "nama": "Investigate",
+    "desc": "Analisis fisik dan pengujian produk untuk membuka fakta di balik klaim."
+   },
+   {
+    "nama": "Educate",
+    "desc": "Menjelaskan material, konstruksi, dan teknologi dengan bahasa yang mudah dipahami."
+   },
+   {
+    "nama": "Protect",
+    "desc": "Membantu konsumen memilih dengan informasi yang objektif dan kredibel."
+   }
   ],
-  "_faq": "Pertanyaan di beranda. t = pertanyaan, j = jawaban. Tambah/hapus/ubah urutan bebas.",
-  "faq": [
+  "mengapa": [
+   "Shoe Police tidak sekadar membuat konten promosi. Dengan menggabungkan perspektif media, konsumen, dan analisis produk, kami menciptakan komunikasi yang lebih kredibel.",
+   "Shoe Police bukan hanya memiliki jumlah konten atau exposure, tetapi juga membangun kepercayaan konsumen terhadap informasi produk *footwear*, dan menjadi salah satu platform yang berani mengungkap produk secara lebih objektif melalui analisis fisik, pengujian, dan investigasi, sehingga kualitas *engagement* ikut meningkat."
+  ],
+  "jenisKonten": [
+   "Peluncuran Produk Baru",
+   "Brand Launching",
+   "Koleksi Terbaru",
+   "Event dan Kegiatan Brand",
+   "Investigasi dan Review Produk",
+   "Prestasi dan Pencapaian Brand",
+   "Ekspansi Bisnis/Store",
+   "Cerita di Balik Produk",
+   "Aktivitas Komunitas"
+  ],
+  "audiens": {
+   "intro": "Kami memiliki komunitas yang setia dan memiliki tingkat pembelian yang tinggi (early adopters).",
+   "stat": [
     {
-      "t": "Berapa pasang sepatu yang dipakai untuk satu kali bedah?",
-      "j": "Dua pasang per model: satu dipakai untuk wear test, satu lagi dibedah di lab."
+     "angka": "124+",
+     "judul": "Total jangkauan",
+     "ket": "Juta views per tahun (TikTok & YouTube)"
     },
     {
-      "t": "Berapa lama satu sepatu dites?",
-      "j": "Tes pemakaian rata-rata sampai 7 hari. Untuk sneakers harian bisa lebih singkat. Setelah itu baru masuk ke tahap bedah dan pengukuran di lab."
+     "angka": "70%",
+     "judul": "Demografi",
+     "ket": "Usia 25–45 tahun (profesional & pemilik bisnis)"
     },
     {
-      "t": "Apakah sepatu hasil kerja sama dinilai berbeda?",
-      "j": "Tidak. Bedah kolaborasi melewati SOP, alat, dan cara penilaian yang sama dengan bedah independen."
-    },
-    {
-      "t": "Kenapa ukuran sepatu yang dites berbeda-beda?",
-      "j": "Ukuran mengikuti kaki tester yang memakainya. Karena itu angka berat sebaiknya dibandingkan dengan hati-hati, sebab ukuran yang lebih besar wajar lebih berat."
-    },
-    {
-      "t": "Bisa request sepatu tertentu untuk dibedah?",
-      "j": "Bisa. Kirim lewat halaman Kerja Sama atau DM Instagram Shoe Police."
+     "angka": "80%",
+     "judul": "Wilayah",
+     "ket": "Tinggal di kota besar (tier 1)"
     }
+   ],
+   "ciri": "Sebagian besar adalah konsumen yang mementingkan kualitas, memiliki gaya hidup aktif, dan terbiasa berbelanja online.",
+   "profil": [
+    [
+     "Gender",
+     "77%–94,5% laki-laki lintas platform",
+     "Kategori sport = high-intent male shopper"
+    ],
+    [
+     "Usia",
+     "70% berusia 25–45 tahun",
+     "Segmen daya beli matang, komunitas besar"
+    ],
+    [
+     "Pekerjaan",
+     "Profesional",
+     "AOV lebih tinggi, sesuai kategori non-komoditas"
+    ],
+    [
+     "Lokasi",
+     "80% urban tier 1 (Jakarta, Surabaya, Bandung)",
+     "Overlap tinggi dengan basis pengguna"
+    ],
+    [
+     "Psikografis",
+     "Quality-conscious, digital-native",
+     "Target ideal edukasi"
+    ]
+   ]
+  },
+  "platform": [
+   {
+    "nama": "YouTube",
+    "ikon": "yt",
+    "pengikut": "187K+",
+    "gender": "91,5% laki-laki",
+    "usia": [
+     [
+      "18–24 th",
+      "35,3%"
+     ],
+     [
+      "25–35 th",
+      "45,2%"
+     ]
+    ],
+    "lokasi": "Jakarta, Surabaya, Bandung, Palembang",
+    "interaksi": "317 interaksi/hari",
+    "er": "3,5%",
+    "link": "https://www.youtube.com/@shoepolice"
+   },
+   {
+    "nama": "TikTok",
+    "ikon": "tt",
+    "pengikut": "249K+",
+    "gender": "72% laki-laki · 28% perempuan",
+    "usia": [
+     [
+      "18–24 th",
+      "45%"
+     ],
+     [
+      "25–35 th",
+      "42%"
+     ]
+    ],
+    "lokasi": "Jakarta, Surabaya, Bandung",
+    "interaksi": "3.017 suka/hari",
+    "er": "4%",
+    "link": "https://www.tiktok.com/@shoepolice__"
+   },
+   {
+    "nama": "Instagram",
+    "ikon": "ig",
+    "pengikut": "114K+",
+    "gender": "94,5% laki-laki",
+    "usia": [
+     [
+      "18–24 th",
+      "45,4%"
+     ],
+     [
+      "25–35 th",
+      "25,6%"
+     ]
+    ],
+    "lokasi": "Jakarta, Surabaya, Bandung",
+    "interaksi": "178 suka & 19 komentar/hari",
+    "er": "0,87%",
+    "link": "https://www.instagram.com/shoepolice__"
+   }
+  ],
+  "pencapaian": [
+   {
+    "judul": "Silver Play Button",
+    "ket": "YouTube · sejak 2025",
+    "ikon": "play"
+   },
+   {
+    "judul": "Guest Speaker",
+    "ket": "Kasisolusi Podcast",
+    "ikon": "mic"
+   },
+   {
+    "judul": "Kolaborasi",
+    "ket": "Bersama Panji Pragiwaksono",
+    "ikon": "kolab"
+   }
   ]
+ }
 }
